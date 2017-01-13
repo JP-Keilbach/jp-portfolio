@@ -1,4 +1,7 @@
-.DS_Store
+# Untracked files:
+
+# .DS_Store
+
 bower_components
 node_modules
 npm-debug.log
