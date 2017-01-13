@@ -1,0 +1,14 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      #css/font-awesome-4.6.2/css/font-awesome.min.css: {}
+      css/app.css: {}
+      css/style.css: {}
+  js:
+    bower_components/what-input/dist/what-input.js: {}
+    bower_components/foundation-sites/dist/js/foundation.js: {}
+    js/app.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.one
