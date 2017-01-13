@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create();
 // Setting up the browserSync task
 gulp.task('browserSync', function() {
     browserSync.init({
-        proxy: "http://drupal-sandbox.dev"
+        proxy: "http://jp-portfolio.dev"
     })
 });
 
