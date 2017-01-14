@@ -755,7 +755,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 $databases['default']['default'] = array (
-  'database' => 'drupal_sb',
+  'database' => 'jp_portfolio',
   'username' => 'root',
   'password' => '',
   'prefix' => '',

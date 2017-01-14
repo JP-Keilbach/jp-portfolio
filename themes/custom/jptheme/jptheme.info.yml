@@ -6,16 +6,18 @@ libraries:
   - jptheme/global-styling
   - jptheme/js
 regions:
-  header: Header
-  primary_menu: 'Primary Menu'
-  breadcrumb: Breadcrumb
-  highlighted: Highlighted
-  help: Help
-  content: Content
-  content_2: Content 2
-  content_3: Content 3
-  content_4: Content 4
-  content_5: Content 5
-  content_6: Content 6
-  sidebar_first: 'Sidebar first'
-  footer: Footer
+  header: 'Header'
+  content: 'Main Content'
+  footer: 'Footer'
+  sidebar: 'Sidebar'
+
+  # primary_menu: 'Primary Menu'
+  # breadcrumb: Breadcrumb
+  # highlighted: Highlighted
+  # help: Help
+  # content: Content
+  # content_2: Content 2
+  # content_3: Content 3
+  # content_4: Content 4
+
+

@@ -1,0 +1,12 @@
+
+<div{{ attributes }}>
+  <h1>Hey, I can edit my own block. Nice!</h1>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
