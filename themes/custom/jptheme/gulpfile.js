@@ -37,8 +37,8 @@ gulp.task('sass', function() {
 
 // This is the default task - which is run when 'gulp' is run
 // The tasks passed in as an array are run before the tasks within the funciton
-gulp.task('default', ['browserSync', 'sass'], function() {
+gulp.task('watch', ['browserSync', 'sass'], function() {
   // Watch the files in the path object, and when there is a change, run the functions in the array
   gulp.watch(['scss/**/*.scss'], ['sass']);
-  gulp.watch(['scss/**/*.scss'], browserSync.reload);
+  // gulp.watch(['scss/**/*.scss'], browserSync.reload);
 });

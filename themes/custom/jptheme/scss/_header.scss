@@ -1,0 +1,33 @@
+.droid-logo-container {
+  // background: url('../assets/images/tile-underline.svg') no-repeat bottom center;
+  #logo-droid {
+    display: block;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+.welcome-message {
+  margin: 1.5em 0 0 0;
+  span {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  span.welcome {
+    font-family: $ks-medium;
+    font-size: 3em;
+    letter-spacing: 6px;
+    line-height: 1em;
+  }
+
+  span.to-my-portfolio {
+    border-top: 1px solid $light-grey;
+    font-size: 1.125em;
+  }
+}

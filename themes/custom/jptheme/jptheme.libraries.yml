@@ -3,6 +3,8 @@ global-styling:
   css:
     theme:
       #css/font-awesome-4.6.2/css/font-awesome.min.css: {}
+      assets/klinic-slab/stylesheet.css: {}
+      assets/franchise/stylesheet.css: {}
       css/app.css: {}
       css/style.css: {}
   js:

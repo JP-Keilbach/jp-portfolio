@@ -1,0 +1,55 @@
+
+
+/* Global Styling */
+
+body {
+  // background: url('../assets/images/grid-24px.png') top left;
+  font-family: $ks-book;
+  line-height: 1.5em;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-family: $ks-medium;
+  text-transform: uppercase;
+  margin: 0 0 1.5em 0;
+}
+
+h1 {
+  font-size: 3.75em;
+  line-height: 4.5em;
+  letter-spacing: 20px;
+  margin: 0 0 24px 0;
+
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+
+/* Lists */
+ul, ol, dl {
+  list-style: none;
+  line-height: 1.5em;
+  margin: 0 0 1.5em 0;
+}
+
+h1.test {
+  font-family: $ks-book;
+  color: $sunshine;
+}
+
+/* Particles */
+hr.tile-underline {
+  background: $dirt;
+  display: block;
+  border: none;
+  height: 4px;
+  margin: 0;
+}
