@@ -3,7 +3,7 @@
 /* Global Styling */
 
 body {
-  // background: url('../assets/images/grid-24px.png') top left;
+  background: url('../assets/images/grid-24px.png') top left;
   font-family: $ks-book;
   line-height: 1.5em;
 }
@@ -51,5 +51,13 @@ hr.tile-underline {
   display: block;
   border: none;
   height: 4px;
-  margin: 0;
+  margin: 0 0 20px 0;
+
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid $light-grey;
+    height: 1px;
+    padding: 4px;
+  }
 }

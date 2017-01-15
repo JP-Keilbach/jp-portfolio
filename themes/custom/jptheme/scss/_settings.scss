@@ -50,19 +50,19 @@ $global-font-size: 100%;
 $global-width: rem-calc(1000);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #FCC911,
+  secondary: #222222,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
+$light-gray: #CDCDCD;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #AAAAAA;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: #222222;
 $body-font-family: 'klinic_slabbook', Times New Roman, sans;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -96,7 +96,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -613,7 +613,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
