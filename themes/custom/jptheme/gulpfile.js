@@ -8,6 +8,7 @@ var sassPaths = [
 ];
 
 var browserSync = require('browser-sync').create();
+// var sourcemaps = require('gulp-sourcemaps');
 
 // Setting up the browserSync task
 gulp.task('browserSync', function() {
@@ -24,11 +25,13 @@ gulp.task('sass', function() {
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
-    })
+      })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
+      // .pipe(sourcemaps.init())
+      // .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('css')) // Output to destination folder
     .pipe(browserSync.reload({
         stream: true

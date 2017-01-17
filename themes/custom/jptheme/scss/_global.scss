@@ -3,35 +3,46 @@
 /* Global Styling */
 
 body {
-  background: url('../assets/images/grid-24px.png') top left;
+  // background: url('../assets/images/grid-24px.png') top left !important;
   font-family: $ks-book;
-  line-height: 1.5em;
 }
 
 /* Typography */
+h1 { line-height: rem-calc(72) }
+h2 { line-height: rem-calc(48) }
+h3 { line-height: rem-calc(48) }
+h4 { line-height: rem-calc(48) }
+h5 { line-height: rem-calc(24) }
+
+h1.centered,
+h2.centered,
+h3.centered,
+h4.centered,
+h5.centered {
+  text-align: center;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span {
+  font-family: $ks-bold;
+}
+
+
 h1, h2, h3, h4, h5 {
-  font-family: $ks-medium;
+  font-family: $ks-book;
   text-transform: uppercase;
-  margin: 0 0 1.5em 0;
+  margin: rem-calc(0 0 24 0);
 }
 
 h1 {
-  font-size: 3.75em;
-  line-height: 4.5em;
-  letter-spacing: 20px;
-  margin: 0 0 24px 0;
-
+  letter-spacing: rem-calc(20);
+  margin: rem-calc(0 0 24 0);
 }
 
-h2 {
-  font-size: 1.75em;
-  line-height: 1.5em;
-}
 
-h3 {
-  font-size: 1.125em;
-  line-height: 1.5em;
-}
 
 /* Lists */
 ul, ol, dl {
@@ -51,13 +62,13 @@ hr.tile-underline {
   display: block;
   border: none;
   height: 4px;
-  margin: 0 0 20px 0;
+  margin: rem-calc(0 0 20 0);
 
   &:after {
     display: block;
     content: '';
     border-bottom: 1px solid $light-grey;
-    height: 1px;
-    padding: 4px;
+    height: rem-calc(1);
+    padding: rem-calc(4);
   }
 }

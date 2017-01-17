@@ -6,7 +6,6 @@ global-styling:
       assets/klinic-slab/stylesheet.css: {}
       assets/franchise/stylesheet.css: {}
       css/app.css: {}
-      css/style.css: {}
   js:
     bower_components/what-input/dist/what-input.js: {}
     bower_components/foundation-sites/dist/js/foundation.js: {}

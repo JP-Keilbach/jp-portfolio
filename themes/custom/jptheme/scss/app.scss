@@ -4,12 +4,15 @@
 @import 'foundation';
 @import 'motion-ui';
 
+// @include global & grid
 @include foundation-global-styles;
 @include foundation-grid;
+
 // @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
+
 // @include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
@@ -31,6 +34,7 @@
 @include foundation-orbit;
 @include foundation-pagination;
 @include foundation-progress-bar;
+
 // @include foundation-progress-element;
 // @include foundation-meter-element;
 @include foundation-slider;
@@ -45,6 +49,10 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
+
 // @include foundation-flex-classes;
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// @include own styles here
+@import 'style';

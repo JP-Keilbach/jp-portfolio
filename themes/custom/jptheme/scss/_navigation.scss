@@ -1,8 +1,33 @@
 .top-bar {
-  margin: 0;
+  margin: rem-calc(24 0 48 0);
   padding: 0;
 
   .top-bar-title {
     padding: 0;
+
+    img {
+      height: rem-calc(48);
+    }
+  }
+
+  .top-bar-left {
+    float: none;
+    line-height: rem-calc(48);
+
+    ul.menu {
+      display: table;
+      line-height: inherit;
+      text-align: center;
+      margin: rem-calc(0) auto;
+
+      li a {
+        padding: rem-calc(0 15);
+        color: $dirt;
+        font-size: rem-calc(14);
+        line-height: inherit;
+        letter-spacing: rem-calc(1);
+        text-transform: uppercase;
+      }
+    }
   }
 }

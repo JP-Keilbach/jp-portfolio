@@ -1,14 +1,14 @@
 .droid-logo-container {
-  // background: url('../assets/images/tile-underline.svg') no-repeat bottom center;
+
   #logo-droid {
     display: block;
-    max-width: 290px;
+    max-width: rem-calc(290);
     margin: 0 auto;
   }
 }
 
 .welcome-message {
-  height: 72px;
+  height: rem-calc(72);
   span {
     display: block;
     text-transform: uppercase;
@@ -17,13 +17,13 @@
 
   span.welcome {
     font-family: $ks-medium;
-    font-size: 3em;
-    letter-spacing: 6px;
+    font-size: rem-calc(48);
+    letter-spacing: rem-calc(6);
     line-height: 1em;
   }
 
   span.to-my-portfolio {
     border-top: 1px solid $light-grey;
-    font-size: 1.125em;
+    font-size: rem-calc(18);
   }
 }
