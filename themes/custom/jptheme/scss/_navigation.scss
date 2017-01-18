@@ -12,22 +12,23 @@
 
   .top-bar-left {
     float: none;
-    line-height: rem-calc(48);
-
+    line-height: rem-calc(40);
     border-top: 4px solid $dirt;
-    // border-bottom: 4px solid $dirt;
+    border-bottom: 4px solid $dirt;
 
     ul.menu {
+      width: 100%;
+      margin: rem-calc(0) auto;
       display: table;
       line-height: inherit;
       text-align: center;
-      margin: rem-calc(0) auto;
+
 
       li a {
         position: relative;
         padding: rem-calc(0 12);
 
-        border-bottom: 4px solid $dirt;
+        // border-bottom: 4px solid $dirt;
 
         color: $dirt;
         font-size: rem-calc(14);
@@ -36,19 +37,14 @@
         text-transform: uppercase;
       }
 
-      li a:hover {
-        // border-bottom: 4px solid $primary-color;
-        color: #000;
-      }
-
       li a:before {
         content: '';
         position: absolute;
         width: 100%;
         // height: 4px;
-        bottom: -4px;
+        bottom: rem-calc(-4);
         left: 0;
-        border-bottom: 4px solid $primary-color;
+        border-bottom: 4px solid $sunshine;
         // background-color: $primary-color;
         visibility: visible;
 
