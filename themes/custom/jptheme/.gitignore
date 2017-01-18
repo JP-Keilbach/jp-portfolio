@@ -5,5 +5,4 @@ bower_components
 node_modules
 npm-debug.log
 settings.php
-.idea/workspace.xml
-**/.idea/workspace.xml
+workspace.xml
