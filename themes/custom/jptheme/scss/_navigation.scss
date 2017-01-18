@@ -14,6 +14,9 @@
     float: none;
     line-height: rem-calc(48);
 
+    border-top: 4px solid $dirt;
+    // border-bottom: 4px solid $dirt;
+
     ul.menu {
       display: table;
       line-height: inherit;
@@ -21,12 +24,44 @@
       margin: rem-calc(0) auto;
 
       li a {
-        padding: rem-calc(0 15);
+        position: relative;
+        padding: rem-calc(0 12);
+
+        border-bottom: 4px solid $dirt;
+
         color: $dirt;
         font-size: rem-calc(14);
         line-height: inherit;
         letter-spacing: rem-calc(1);
         text-transform: uppercase;
+      }
+
+      li a:hover {
+        // border-bottom: 4px solid $primary-color;
+        color: #000;
+      }
+
+      li a:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        // height: 4px;
+        bottom: -4px;
+        left: 0;
+        border-bottom: 4px solid $primary-color;
+        // background-color: $primary-color;
+        visibility: visible;
+
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+      }
+
+      li a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
       }
     }
   }
