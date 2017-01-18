@@ -3,8 +3,9 @@
 /* Global Styling */
 
 body {
-  // background: url('../assets/images/grid-24px.png') top left !important;
+  background: url('../assets/images/grid-24px.png') top left !important;
   font-family: $ks-book;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -41,8 +42,6 @@ h1 {
   letter-spacing: rem-calc(20);
   margin: rem-calc(0 0 24 0);
 }
-
-
 
 /* Lists */
 ul, ol, dl {
