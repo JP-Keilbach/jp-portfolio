@@ -1,7 +1,30 @@
+// Top Bar
+// -------
 .top-bar {
   margin: rem-calc(24 0 48 0);
   padding: 0;
 
+  // Top Bar Lists Global
+  // --------------------
+  ul.menu {
+    li {
+      text-align: center;
+      a {
+        padding: 0;
+        color: $dirt;
+        line-height: rem-calc(40);
+
+        i {
+          display: block;
+          margin: 0;
+          line-height: inherit;
+        }
+      }
+    }
+  }
+
+  // Top Bar Title
+  // -------------
   .top-bar-title {
     padding: 0;
 
@@ -10,6 +33,8 @@
     }
   }
 
+  // Top Bar Left
+  // ------------
   .top-bar-left {
     float: none;
     line-height: rem-calc(40);
@@ -28,9 +53,6 @@
         position: relative;
         padding: rem-calc(0 12);
 
-        // border-bottom: 4px solid $dirt;
-
-        color: $dirt;
         font-size: rem-calc(14);
         line-height: inherit;
         letter-spacing: rem-calc(1);
@@ -41,11 +63,9 @@
         content: '';
         position: absolute;
         width: 100%;
-        // height: 4px;
         bottom: rem-calc(-4);
         left: 0;
         border-bottom: 4px solid $sunshine;
-        // background-color: $primary-color;
         visibility: visible;
 
         -webkit-transform: scaleX(0);
@@ -58,6 +78,45 @@
         visibility: visible;
         -webkit-transform: scaleX(1);
                 transform: scaleX(1);
+      }
+    }
+  }
+
+  // Top Bar Right
+  // -------------
+  .top-bar-right {
+    width: 100%;
+    line-height: rem-calc(40);
+    border-top: 4px solid $dirt;
+    border-bottom: 4px solid $dirt;
+
+    .follow-me {
+      display: inline-block;
+      float: left;
+      width: auto;
+      font-size: rem-calc(14);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    ul.menu {
+      float: right;
+
+      li:first-child a {
+        border-left: 4px solid $dirt;
+      }
+
+      li a {
+        width: rem-calc(48);
+        border-right: 4px solid $dirt;
+
+        transition: background-color 0.5s ease, color 0.5s ease;
+
+        &:hover {
+          background: $sunshine;
+          color: white;
+        }
+
       }
     }
   }

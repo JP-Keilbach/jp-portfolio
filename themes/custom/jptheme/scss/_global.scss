@@ -8,6 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  padding: 0;
+  line-height: rem-calc(24);
+}
+
 /* Typography */
 h1 { line-height: rem-calc(72) }
 h2 { line-height: rem-calc(48) }
