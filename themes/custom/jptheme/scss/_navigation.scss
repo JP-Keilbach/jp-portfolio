@@ -2,12 +2,12 @@
 // -------
 
 	.top-bar {
-		@include breakpoint(large) {
+		@include breakpoint(medium) {
 			display: block;
 		}
 
-		@include breakpoint(medium only) {
-			display: none;
+		@include breakpoint(medium down) {
+			// display: none;
 		}
 
 		margin: rem-calc(24 0 48 0);
@@ -119,6 +119,7 @@
 	// Top Bar Right
 	// -------------
 	.top-bar-right {
+		background: $dirt;
 		width: 100%;
 		line-height: rem-calc(40);
 		border-top: 4px solid $dirt;
@@ -128,6 +129,13 @@
 			float: right;
 
 			li:first-child {
+
+				span {
+					@include breakpoint(medium only) {
+						display: none;
+					}
+				}
+
 				background: $dirt;
 				width: 100%;
 				color: white;
@@ -142,6 +150,7 @@
 			}
 
 			li a {
+				background: white;
 				width: rem-calc(48);
 				border-right: 4px solid $dirt;
 
@@ -165,7 +174,7 @@
 		display: none;
 	}
 
-	@include breakpoint(medium only) {
+	@include breakpoint(medium down) {
 		display: block;
 	}
 

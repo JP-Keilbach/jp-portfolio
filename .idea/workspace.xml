@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fec8e3-40d5-4a3b-9bb9-809bb39d8ab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/jptheme/css/style.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/style.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/css/app.css" afterPath="$PROJECT_DIR$/themes/custom/jptheme/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/block--system-branding-block.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/templates/block--system-branding-block.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +54,8 @@
       <file leaf-file-name="menu--main.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="598">
+              <caret line="73" column="51" lean-forward="false" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -78,8 +74,8 @@
       <file leaf-file-name="_navigation.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="168" column="23" lean-forward="false" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="133" column="54" lean-forward="true" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -437,12 +433,12 @@
       <workItem from="1484729748716" duration="794000" />
       <workItem from="1484741413699" duration="3007000" />
       <workItem from="1484807518673" duration="7454000" />
-      <workItem from="1484853621857" duration="5297000" />
+      <workItem from="1484853621857" duration="6665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61159000" />
+    <option name="totallyTimeSpent" value="62527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -863,16 +859,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="598">
+          <caret line="73" column="51" lean-forward="false" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="168" column="23" lean-forward="false" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="133" column="54" lean-forward="true" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="54" />
           <folding />
         </state>
       </provider>
