@@ -1,141 +1,202 @@
 // Top Bar
 // -------
-.top-bar {
-  margin: rem-calc(24 0 48 0);
-  padding: 0;
 
-  // Top Bar Lists Global
-  // --------------------
-  ul.menu {
-    li {
-      text-align: center;
-      line-height: rem-calc(40);
+	.top-bar {
+		@include breakpoint(large) {
+			display: block;
+		}
 
-      a {
-        padding: 0;
-        color: $dirt;
-        line-height: inherit;
+		@include breakpoint(medium only) {
+			display: none;
+		}
 
-        i {
-          display: block;
-          margin: 0;
-          line-height: inherit;
-        }
-      }
-    }
-  }
+		margin: rem-calc(24 0 48 0);
+		padding: 0;
 
-  // Top Bar Title
-  // -------------
-  .top-bar-title {
-    padding: 0;
+		// Top Bar Lists Global
+		// --------------------
+		ul.menu {
+			li {
+				text-align: center;
+				line-height: rem-calc(40);
 
-    ul {
-      display: table;
-      width: 100%;
-      line-height: rem-calc(48);
+				a {
+					padding: 0;
+					color: $dirt;
+					line-height: inherit;
 
-      li {
-        float: left;
-        line-height: inherit;
+					i {
+						display: block;
+						margin: 0;
+						line-height: inherit;
+					}
+				}
+			}
+		}
 
-        img {
-          float: left;
-          width: auto;
-          height: rem-calc(48);
-        }
-      }
-    }
+		// Top Bar Title
+		// -------------
+		.top-bar-title {
+			padding: 0;
+			width: 100%;
+
+			ul.menu {
+				display: table;
+				width: 100%;
+				line-height: rem-calc(48);
+
+				li {
+					line-height: inherit;
+
+					img {
+						float: left;
+						width: auto;
+						height: rem-calc(48);
+					}
+
+					a {
+						padding: 0 rem-calc(26);
+						background: $dirt;
+						color: white;
+						font-size: 14px;
+						font-family: $ks-medium;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		// Top Bar Left
+		// ------------
+		.top-bar-left {
+			float: none;
+			line-height: rem-calc(40);
+			border-top: 4px solid $dirt;
+			border-bottom: 4px solid $dirt;
+
+			ul.menu {
+				width: 100%;
+				margin: rem-calc(0) auto;
+				display: table;
+				line-height: inherit;
+				text-align: center;
+
+				li a {
+					position: relative;
+					padding: rem-calc(0 12);
+
+					font-size: rem-calc(14);
+					line-height: inherit;
+					letter-spacing: rem-calc(1);
+					text-transform: uppercase;
+				}
+
+				li a:before {
+					content: '';
+					position: absolute;
+					width: 100%;
+					bottom: rem-calc(-4);
+					left: 0;
+					border-bottom: 4px solid $sunshine;
+					visibility: visible;
+
+					-webkit-transform: scaleX(0);
+					transform: scaleX(0);
+					-webkit-transition: all 0.3s ease-in-out 0s;
+					transition: all 0.3s ease-in-out 0s;
+				}
+
+				li a:hover:before {
+					visibility: visible;
+					-webkit-transform: scaleX(1);
+					transform: scaleX(1);
+				}
+			}
+		}
+
+	}
+
+	// Top Bar Right
+	// -------------
+	.top-bar-right {
+		width: 100%;
+		line-height: rem-calc(40);
+		border-top: 4px solid $dirt;
+		border-bottom: 4px solid $dirt;
+
+		ul.menu {
+			float: right;
+
+			li:first-child {
+				background: $dirt;
+				width: 100%;
+				color: white;
+				font-family: $ks-medium;
+				font-size: rem-calc(14);
+				text-transform: uppercase;
+				text-align: center;
+			}
+
+			li:nth-child(2) a {
+				border-left: 4px solid $dirt;
+			}
+
+			li a {
+				width: rem-calc(48);
+				border-right: 4px solid $dirt;
+
+				@include transition(background-color 0.5s ease, color 0.30s ease);
+
+				&:hover {
+					background: $sunshine;
+					color: white;
+				}
+
+			}
+		}
+	}
 
 
-  }
+// Top Bar Mobile
+// --------------
 
-  // Top Bar Left
-  // ------------
-  .top-bar-left {
-    float: none;
-    line-height: rem-calc(40);
-    border-top: 4px solid $dirt;
-    border-bottom: 4px solid $dirt;
+.top-bar.mobile {
+	@include breakpoint(large) {
+		display: none;
+	}
 
-    ul.menu {
-      width: 100%;
-      margin: rem-calc(0) auto;
-      display: table;
-      line-height: inherit;
-      text-align: center;
+	@include breakpoint(medium only) {
+		display: block;
+	}
 
-
-      li a {
-        position: relative;
-        padding: rem-calc(0 12);
-
-        font-size: rem-calc(14);
-        line-height: inherit;
-        letter-spacing: rem-calc(1);
-        text-transform: uppercase;
-      }
-
-      li a:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        bottom: rem-calc(-4);
-        left: 0;
-        border-bottom: 4px solid $sunshine;
-        visibility: visible;
-
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
-      }
-
-      li a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-      }
-    }
-  }
-
-  // Top Bar Right
-  // -------------
-  .top-bar-right {
-    width: 100%;
-    line-height: rem-calc(40);
-    border-top: 4px solid $dirt;
-    border-bottom: 4px solid $dirt;
-
-    ul.menu {
-      float: right;
-
-      li:first-child {
-        background: $dirt;
-        width: 100%;
-        color: white;
-        font-family: $ks-medium;
-        font-size: rem-calc(14);
-        text-transform: uppercase;
-        text-align: center;
-      }
-
-      li:nth-child(2) a {
-        border-left: 4px solid $dirt;
-      }
-
-      li a {
-        width: rem-calc(48);
-        border-right: 4px solid $dirt;
-
-        @include transition(background-color 0.5s ease, color 0.30s ease);
-
-        &:hover {
-          background: $sunshine;
-          color: white;
-        }
-
-      }
-    }
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
