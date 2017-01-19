@@ -9,10 +9,12 @@
   ul.menu {
     li {
       text-align: center;
+      line-height: rem-calc(40);
+
       a {
         padding: 0;
         color: $dirt;
-        line-height: rem-calc(40);
+        line-height: inherit;
 
         i {
           display: block;
@@ -28,9 +30,24 @@
   .top-bar-title {
     padding: 0;
 
-    img {
-      height: rem-calc(48);
+    ul {
+      display: table;
+      width: 100%;
+      line-height: rem-calc(48);
+
+      li {
+        float: left;
+        line-height: inherit;
+
+        img {
+          float: left;
+          width: auto;
+          height: rem-calc(48);
+        }
+      }
     }
+
+
   }
 
   // Top Bar Left
@@ -90,19 +107,20 @@
     border-top: 4px solid $dirt;
     border-bottom: 4px solid $dirt;
 
-    .follow-me {
-      display: inline-block;
-      float: left;
-      width: auto;
-      font-size: rem-calc(14);
-      text-transform: uppercase;
-      text-align: center;
-    }
-
     ul.menu {
       float: right;
 
-      li:first-child a {
+      li:first-child {
+        background: $dirt;
+        width: 100%;
+        color: white;
+        font-family: $ks-medium;
+        font-size: rem-calc(14);
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      li:nth-child(2) a {
         border-left: 4px solid $dirt;
       }
 
@@ -110,7 +128,7 @@
         width: rem-calc(48);
         border-right: 4px solid $dirt;
 
-        transition: background-color 0.5s ease, color 0.5s ease;
+        @include transition(background-color 0.5s ease, color 0.30s ease);
 
         &:hover {
           background: $sunshine;
