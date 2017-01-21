@@ -26,22 +26,29 @@
 #}
 
 	<div class="top-bar">
-		<div class="medium-4 columns">
+		<div class="medium-6 large-4 columns">
 			<div class="top-bar-title">
-				<ul class="menu">
+				<ul class="menu logo-menu">
 					<li>
 						<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
 							<button class="menu-icon dark" type="button" data-toggle></button>
     					</span>
 					</li>
-					<li><img src="themes/custom/jptheme/assets/images/logo-main-nav.svg" alt="Logo Hauptnavigation"></li>
+					<li><a href="/"><img src="themes/custom/jptheme/assets/images/logo-main-nav.svg" alt="Logo Hauptnavigation"></a></li>
 					<li><a href="http://www.spreadshirt.de" class="button">Speadshirt</a></li>
+				</ul>
+
+				<ul class="menu social-menu">
+					<li><a href="/"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="/"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="/"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="/"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
 
-		<div id="responsive-menu">
-			<div class="medium-4 columns">
+		<div id="responsive-menu" class="medium-6 large-8 columns">
+			<div class="medium-12 large-6 columns np-left">
 				<div class="top-bar-left">
 					{{ menus.menu_links(items, attributes, 0) }}
 
@@ -68,7 +75,7 @@
 				</div>
 			</div>
 
-			<div class="small-12 medium-4 columns">
+			<div class="medium-6 columns disapear-on-medium np-right">
 				<div class="top-bar-right">
 					<ul class="menu social-menu">
 						<li><span>Follow me:</span></li>
@@ -81,8 +88,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Top Bar Mobile -->
 
 
 

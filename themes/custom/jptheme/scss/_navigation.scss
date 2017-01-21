@@ -1,61 +1,84 @@
+// Table of Interest
+// -----------------
+// 1. Top Bar
+// 2. Top Bar Title
+// 3. Top Bar Left
+// 4. Top Bar Right
+// -----------------
+
+
+
 // Top Bar
 // -------
+.top-bar {
+	margin: rem-calc(24 0 48 0);
+	padding: 0;
 
-	.top-bar {
-		@include breakpoint(medium) {
-			display: block;
-		}
+	// Top Bar Lists Global
+	// --------------------
+	ul.menu {
+		float: left;
 
-		@include breakpoint(medium down) {
-			// display: none;
-		}
+		li {
+			text-align: center;
+			line-height: rem-calc(40);
 
-		margin: rem-calc(24 0 48 0);
-		padding: 0;
+			a {
+				padding: 0;
+				color: $dirt;
+				line-height: inherit;
 
-		// Top Bar Lists Global
-		// --------------------
-		ul.menu {
-			li {
-				text-align: center;
-				line-height: rem-calc(40);
-
-				a {
-					padding: 0;
-					color: $dirt;
+				i {
+					display: block;
+					margin: 0;
 					line-height: inherit;
+				}
+			}
+		}
+	}
 
-					i {
-						display: block;
-						margin: 0;
-						line-height: inherit;
+	// Top Bar Title
+	// -------------
+	.top-bar-title {
+		background: $dirt;
+		padding: 0;
+		width: 100%;
+
+		// -----------------------
+		// Overall styles for Menu
+		// within Top Bar Title
+		ul.menu {
+			// float: left;
+			display: inline;
+			line-height: rem-calc(48);
+
+			li {
+				float: left;
+				line-height: inherit;
+
+				&:nth-child(3) {
+					@include breakpoint(medium only) {
+						display: none;
 					}
 				}
 			}
 		}
 
-		// Top Bar Title
-		// -------------
-		.top-bar-title {
-			padding: 0;
-			width: 100%;
+		// -----------------------------
+		// Styles specific for Logo Menu
+		// within Top Bar Title
+		ul.logo-menu{
+			li {
 
-			ul.menu {
-				display: table;
-				width: 100%;
-				line-height: rem-calc(48);
-
-				li {
-					line-height: inherit;
-
+				a {
 					img {
 						float: left;
 						width: auto;
 						height: rem-calc(48);
+						margin: 0;
 					}
 
-					a {
-						padding: 0 rem-calc(26);
+					&.button {
 						background: $dirt;
 						color: white;
 						font-size: 14px;
@@ -63,121 +86,219 @@
 						text-transform: uppercase;
 					}
 				}
+
+
+				&:nth-child(1) {
+					span{
+						float: left;
+						display: inline-block;
+						background: white;
+						width: rem-calc(48);
+						height: rem-calc(48);
+						border: 4px solid #565656;
+
+						button { bottom: rem-calc(6); color: #565656; }
+					}
+				}
+
+				&:nth-child(3) { padding-left: rem-calc(25); }
 			}
+
 		}
 
-		// Top Bar Left
-		// ------------
-		.top-bar-left {
-			float: none;
-			line-height: rem-calc(40);
+		// -------------------------------
+		// Styles specific for Social Menu
+		// within Top Bar Title
+		ul.social-menu {
+
+			@include breakpoint(large) {
+				display: none;
+			}
+
+			@include breakpoint(small only) {
+				display: none;
+			}
+			float: right;
 			border-top: 4px solid $dirt;
 			border-bottom: 4px solid $dirt;
 
-			ul.menu {
-				width: 100%;
-				margin: rem-calc(0) auto;
-				display: table;
-				line-height: inherit;
-				text-align: center;
+			li {
 
-				li a {
-					position: relative;
-					padding: rem-calc(0 12);
+				border-left: 4px solid $dirt;
 
+				a {
+					background: white;
+					width: rem-calc(40);
+					line-height: rem-calc(40);
+
+					@include transition(background-color 0.5s ease, color 0.30s ease);
+
+					&:hover {
+						background: $sunshine;
+						color: white;
+					}
+				}
+
+				&:nth-child(1) {
+					background: $dirt;
+					color: white;
+					font-family: $ks-medium;
 					font-size: rem-calc(14);
-					line-height: inherit;
-					letter-spacing: rem-calc(1);
 					text-transform: uppercase;
+					text-align: center;
 				}
 
-				li a:before {
-					content: '';
-					position: absolute;
-					width: 100%;
-					bottom: rem-calc(-4);
-					left: 0;
-					border-bottom: 4px solid $sunshine;
-					visibility: visible;
-
-					-webkit-transform: scaleX(0);
-					transform: scaleX(0);
-					-webkit-transition: all 0.3s ease-in-out 0s;
-					transition: all 0.3s ease-in-out 0s;
+				&:nth-child(3) {
+					@include breakpoint(medium only) {
+						display: block;
+					}
 				}
 
-				li a:hover:before {
-					visibility: visible;
-					-webkit-transform: scaleX(1);
-					transform: scaleX(1);
+				&:nth-child(4) {
+					border-right: 4px solid $dirt;
 				}
 			}
 		}
-
 	}
 
-	// Top Bar Right
-	// -------------
-	.top-bar-right {
-		background: $dirt;
+	// Top Bar Left
+	// ------------
+	.top-bar-left {
 		width: 100%;
 		line-height: rem-calc(40);
 		border-top: 4px solid $dirt;
 		border-bottom: 4px solid $dirt;
 
+		// Let Borders desapear
+		@include breakpoint(small only) {
+			border-top: none;
+			border-bottom: none;
+		}
+
 		ul.menu {
-			float: right;
-
-			li:first-child {
-
-				span {
-					@include breakpoint(medium only) {
-						display: none;
-					}
-				}
-
-				background: $dirt;
-				width: 100%;
-				color: white;
-				font-family: $ks-medium;
-				font-size: rem-calc(14);
-				text-transform: uppercase;
-				text-align: center;
-			}
-
-			li:nth-child(2) a {
-				border-left: 4px solid $dirt;
-			}
+			width: 100%;
+			margin: rem-calc(0) auto;
+			display: table;
+			line-height: inherit;
+			text-align: center;
 
 			li a {
-				background: white;
-				width: rem-calc(48);
-				border-right: 4px solid $dirt;
+				position: relative;
+				padding: rem-calc(0 12);
 
-				@include transition(background-color 0.5s ease, color 0.30s ease);
+				font-size: rem-calc(14);
+				line-height: inherit;
+				letter-spacing: rem-calc(1);
+				text-transform: uppercase;
+			}
 
-				&:hover {
-					background: $sunshine;
-					color: white;
-				}
+			li a:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				bottom: rem-calc(-4);
+				left: 0;
+				border-bottom: 4px solid $sunshine;
+				visibility: visible;
 
+				-webkit-transform: scaleX(0);
+				transform: scaleX(0);
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+			}
+
+			li a:hover:before {
+				visibility: visible;
+				-webkit-transform: scaleX(1);
+				transform: scaleX(1);
 			}
 		}
 	}
+}
+
+// Top Bar Right
+// -------------
+.top-bar-right {
+	background: $dirt;
+	width: 100%;
+	line-height: rem-calc(40);
+	border-top: 4px solid $dirt;
+	border-bottom: 4px solid $dirt;
+
+	// -------------------------------
+	// Styles specific for Social Menu
+	// within Responsive Bar
+	ul.menu {
+		float: right;
+
+		li:first-child {
+			background: $dirt;
+			width: 100%;
+			color: white;
+			font-family: $ks-medium;
+			font-size: rem-calc(14);
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		li:nth-child(2) a { border-left: 4px solid $dirt; }
+
+		li a {
+			background: white;
+			width: rem-calc(48);
+			border-right: 4px solid $dirt;
+
+			@include transition(background-color 0.5s ease, color 0.30s ease);
+
+			&:hover {
+				background: $sunshine;
+				color: white;
+			}
+		}
+	}
+}
 
 
-// Top Bar Mobile
-// --------------
+// Special breakpoint rules
+// ------------------------
 
-.top-bar.mobile {
-	@include breakpoint(large) {
+// Make Social Menu disapear on the right side
+.disapear-on-medium {
+	@include breakpoint(small only) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include breakpoint(medium only) {
 		display: none;
 	}
+}
 
-	@include breakpoint(medium down) {
-		display: block;
+// Get rid of column padding on medium only
+#responsive-menu {
+	.columns {
+
+		@include breakpoint(medium down) {
+			padding-right: 0;
+		}
 	}
+}
 
+// No Padding
+// ----------
+.np-top { padding-top: 0; }
+.np-right { padding-right: 0; }
+.np-bottom { padding-bottom: 0; }
+.np-left { padding-left: 0; }
+
+.np-left-right {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.np-top-bottom {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 

@@ -1,14 +1,72 @@
+// Define gulp before we start
 var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
 
-var sassPaths = [
-  'bower_components/normalize.scss/sass',
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
-];
-
+// Define Sass, autoprefixer and the sourcemaps
+var sass = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
-// var sourcemaps = require('gulp-sourcemaps');
+
+// This is an object which defines paths for the styles.
+// Can add paths for javascript or images for example
+// The folder, files to look for and destination are all required for sass
+var paths = {
+
+    styles: {
+        srcNormalize: 'bower_components/normalize.scss/sass',
+        srcFoundation: 'bower_components/foundation-sites/scss',
+        srcMotionUi: 'bower_components/motion-ui/src',
+        src: 'bower_components/foundation-sites/scss',
+        files: 'scss/**/*.scss',
+        dest: 'css'
+    }
+}
+
+// A display error function, to format and make custom errors more uniform
+// Could be combined with gulp-util or npm colors for nicer output
+var displayError = function(error) {
+
+    // Initial building up of the error
+    var errorString = '[' + error.plugin + ']';
+    errorString += ' ' + error.message.replace("\n",''); // Removes new line at the end
+
+    // If the error contains the filename or line number add it to the string
+    if(error.fileName)
+        errorString += ' in ' + error.fileName;
+
+    if(error.lineNumber)
+        errorString += ' on line ' + error.lineNumber;
+
+    // This will output an error like the following:
+    // [gulp-sass] error message in file_name on line 1
+    console.error(errorString);
+}
+
+// Setting up the sass task
+gulp.task('sass', function (){
+    // Taking the path from the above object
+    gulp.src(paths.styles.files)
+    // Sass options - make the output compressed and add the source map
+    // Also pull the include path from the paths object
+        .pipe(sass({
+            outputStyle: 'nested',
+            sourceComments: 'map',
+            includePaths : [paths.styles.srcNormalize, paths.styles.srcFoundation, paths.styles.srcMotionUi, paths.styles.src]
+        }))
+        // If there is an error, don't stop compiling but use the custom displayError function
+        .on('error', function(err){
+            displayError(err);
+        })
+        // Pass the compiled sass through the prefixer with defined
+        .pipe(prefix(
+            'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'
+        ))
+        // Bring sourcemaps into play
+        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.write('./maps'))
+        // Finally put the compiled sass into a css file
+        .pipe(gulp.dest(paths.styles.dest))
+});
 
 // Setting up the browserSync task
 gulp.task('browserSync', function() {
@@ -17,31 +75,15 @@ gulp.task('browserSync', function() {
     })
 });
 
-// Setting up the sass task
-gulp.task('sass', function() {
-  // Taking the path from the above objekt
-  return gulp.src('scss/**/*.scss')
-    //
-    .pipe($.sass({
-      includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
-      })
-      .on('error', $.sass.logError))
-    .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
-    }))
-      // .pipe(sourcemaps.init())
-      // .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('css')) // Output to destination folder
-    .pipe(browserSync.reload({
-        stream: true
-    }))
-});
-
-// This is the default task - which is run when 'gulp' is run
-// The tasks passed in as an array are run before the tasks within the funciton
-gulp.task('watch', ['browserSync', 'sass'], function() {
-  // Watch the files in the path object, and when there is a change, run the functions in the array
-  gulp.watch(['scss/**/*.scss'], ['sass']);
-  // gulp.watch(['scss/**/*.scss'], browserSync.reload);
+// This is the default task - which is run when `gulp` is run
+// The tasks passed in as an array are run before the tasks within the function
+gulp.task('default', ['browserSync', 'sass'], function() {
+    // Watch the files in the paths object, and when there is a change, fun the functions in the array
+    gulp.watch(paths.styles.files, ['sass'])
+    // Also when there is a change, display what file was changed, only showing the path after the 'sass folder'
+        .on('change', function(evt) {
+            console.log(
+                '[watcher] File ' + evt.path.replace(/.*(?=sass)/,'') + ' was ' + evt.type + ', compiling...'
+            );
+        });
 });
