@@ -43,46 +43,37 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+{% include directory  ~ '/partials/header.html.twig' %}
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+<main id="content" role="main">
 
-  {{ page.breadcrumb }}
+	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {{ page.highlighted }}
+	<div class="row">
+		<div class="large-12 columns">
+			<h1 class="centered">Im an <span>Headline</span></h1>
+			<h2 class="centered">Im an <span>Headline</span></h2>
+			<h3 class="centered">Im an <span>Headline</span></h3>
+			<h4 class="centered">Im an <span>Headline</span></h4>
+		</div>
+	</div>{# /.row #}
 
-  {{ page.help }}
+	<div class="row">
+		<div class="large-12 columns">
+			{{ page.content }}
+		</div>
+	</div>{# /.row #}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+</main>{# /.layout-container #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>{# /.layout-container #}
+{% if page.footer %}
+	<div class="row">
+		<div class="large-12 columns">
+			<footer role="contentinfo">
+				{{ page.footer }}
+			</footer>
+		</div>
+	</div>{# /.row #}
+{% endif %}

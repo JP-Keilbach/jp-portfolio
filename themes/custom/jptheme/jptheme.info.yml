@@ -8,6 +8,7 @@ libraries:
 regions:
   header: 'Header'
   main_navigation: 'Main Navigation'
+  orbit: 'Orbit Carousel'
   content: 'Main Content'
   footer: 'Footer'
   sidebar: 'Sidebar'

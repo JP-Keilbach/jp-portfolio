@@ -61,6 +61,13 @@ h1.test {
 }
 
 /* Particles */
+hr.nav-underline {
+  background: $dirt;
+  display: block;
+  border: none;
+  height: 1px;
+  margin: rem-calc(0 0 20 0);
+}
 hr.tile-underline {
   background: $dirt;
   display: block;

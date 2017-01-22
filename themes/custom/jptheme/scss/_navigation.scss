@@ -252,7 +252,6 @@
 
 			&:hover {
 				background: $sunshine;
-				color: white;
 			}
 		}
 	}
@@ -277,7 +276,6 @@
 // Get rid of column padding on medium only
 #responsive-menu {
 	.columns {
-
 		@include breakpoint(medium down) {
 			padding-right: 0;
 		}
