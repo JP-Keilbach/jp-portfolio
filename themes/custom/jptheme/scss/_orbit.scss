@@ -1,0 +1,24 @@
+// Orbit Carousel Styles
+// ---------------------
+
+
+.orbit {
+	nav.orbit-bullets {
+		height: rem-calc(48);
+		margin: 0;
+
+		button {
+			background-color: $dirt;
+			width: 8px;
+			height: 8px;
+			margin: rem-calc(20 2 0 2);
+			border-radius: 0;
+
+			&.is-active {
+				background-color: $sunshine;
+			}
+		}
+	}
+}
+
+

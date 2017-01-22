@@ -1,0 +1,17 @@
+.about-me-container {
+	.tile-header {
+		p {
+			text-align: center;
+		}
+	}
+
+	.tile-container {
+
+		img {
+			height: rem-calc(240);
+			width: 100%;
+			margin: rem-calc(24 0 24 0);
+		}
+	}
+
+}

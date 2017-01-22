@@ -8,7 +8,9 @@ libraries:
 regions:
   header: 'Header'
   main_navigation: 'Main Navigation'
+  spread_teaser: 'Spreadshirt Teaser'
   orbit: 'Orbit Carousel'
+  about: 'About Me'
   content: 'Main Content'
   footer: 'Footer'
   sidebar: 'Sidebar'

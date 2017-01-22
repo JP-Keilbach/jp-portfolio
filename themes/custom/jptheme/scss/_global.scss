@@ -1,6 +1,7 @@
 
 
-/* Global Styling */
+// Global Styling
+// --------------
 
 body {
   background: url('../assets/images/grid-24px.png') top left !important;
@@ -13,7 +14,14 @@ a {
   line-height: rem-calc(24);
 }
 
-/* Typography */
+p {
+  font-size: rem-calc(18);
+  line-height: rem-calc(24);
+  margin-bottom: rem-calc(24);
+}
+
+// Typography
+// ----------
 h1 { line-height: rem-calc(72) }
 h2 { line-height: rem-calc(48) }
 h3 { line-height: rem-calc(48) }
@@ -44,11 +52,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  letter-spacing: rem-calc(20);
   margin: rem-calc(0 0 24 0);
 }
 
-/* Lists */
+h5 {
+  font-family: $ks-medium;
+}
+
+// Lists
+// -----
 ul, ol, dl {
   list-style: none;
   line-height: 1.5em;
@@ -60,7 +72,38 @@ h1.test {
   color: $sunshine;
 }
 
-/* Particles */
+// Tiles
+// -----
+.tile-container {
+  overflow: hidden;
+  padding-bottom: rem-calc(24);
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  &.design,
+  &.coding,
+  &.draw {
+
+    h5 {
+      display: table;
+      margin: rem-calc(0) auto rem-calc(23) auto; // 23 because of border-bottom
+      line-height: rem-calc(48);
+      border-bottom: 1px solid $light-gray;
+
+    }
+  }
+}
+
+// Particles
+// ---------
+
+// Underlines
 hr.nav-underline {
   background: $dirt;
   display: block;
@@ -68,12 +111,13 @@ hr.nav-underline {
   height: 1px;
   margin: rem-calc(0 0 20 0);
 }
+
 hr.tile-underline {
   background: $dirt;
   display: block;
   border: none;
   height: 4px;
-  margin: rem-calc(0 0 20 0);
+  margin: rem-calc(0 0 44 0);
 
   &:after {
     display: block;
@@ -81,5 +125,23 @@ hr.tile-underline {
     border-bottom: 1px solid $light-grey;
     height: rem-calc(1);
     padding: rem-calc(4);
+  }
+}
+
+hr.tile-underline-reverse {
+  background: $dirt;
+  display: block;
+  border: none;
+  height: 4px;
+  margin: rem-calc(0 0 44 0);
+
+  &:before {
+    position: relative;
+    display: block;
+    content: '';
+    border-bottom: 1px solid $light-grey;
+    height: rem-calc(1);
+    padding: rem-calc(0);
+    bottom: rem-calc(6);
   }
 }

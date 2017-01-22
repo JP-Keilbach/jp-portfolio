@@ -11,7 +11,7 @@
 // Top Bar
 // -------
 .top-bar {
-	margin: rem-calc(24 0 48 0);
+	margin: rem-calc(24 0 24 0);
 	padding: 0;
 
 	// Top Bar Lists Global
@@ -22,6 +22,10 @@
 		li {
 			text-align: center;
 			line-height: rem-calc(40);
+
+			@include breakpoint(medium) {
+
+			}
 
 			a {
 				padding: 0;
@@ -118,6 +122,7 @@
 			@include breakpoint(small only) {
 				display: none;
 			}
+
 			float: right;
 			border-top: 4px solid $dirt;
 			border-bottom: 4px solid $dirt;
@@ -169,7 +174,7 @@
 		border-top: 4px solid $dirt;
 		border-bottom: 4px solid $dirt;
 
-		// Let Borders desapear
+		// Let Borders disappear
 		@include breakpoint(small only) {
 			border-top: none;
 			border-bottom: none;
@@ -181,6 +186,13 @@
 			display: table;
 			line-height: inherit;
 			text-align: center;
+
+			// Correct line-height because of border disappearing
+			li {
+				@include breakpoint(small only) {
+					line-height: rem-calc(48);
+				}
+			}
 
 			li a {
 				position: relative;
@@ -261,8 +273,8 @@
 // Special breakpoint rules
 // ------------------------
 
-// Make Social Menu disapear on the right side
-.disapear-on-medium {
+// Make Social Menu disappear on the right side
+.disappear-on-medium {
 	@include breakpoint(small only) {
 		padding-left: 0;
 		padding-right: 0;

@@ -48,7 +48,7 @@
 
 $global-font-size: 100%;
 $global-width: rem-calc(1000);
-$global-lineheight: 1.5;
+$global-lineheight: 1.5rem;
 $foundation-palette: (
   primary: #FCC911,
   secondary: #222222,
@@ -113,26 +113,26 @@ $header-lineheight: 1.5;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 32),
+    'h4': ('font-size': 28),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 14),
   ),
   medium: (
     'h1': ('font-size': 48),
     'h2': ('font-size': 40),
     'h3': ('font-size': 32),
     'h4': ('font-size': 28),
-    'h5': ('font-size': 16),
-    'h6': ('font-size': 12),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 14),
   ),
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.5;
+$paragraph-lineheight: 1.5rem;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;

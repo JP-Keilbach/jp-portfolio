@@ -4,18 +4,17 @@
 
 	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-	<div class="row">
-		<div class="large-12 columns">
-			{{ page.orbit }}
-			<h1 class="centered">Im an <span>Headline</span></h1>
-			<h2 class="centered">Im an <span>Headline</span></h2>
-			<h3 class="centered">Im an <span>Headline</span></h3>
-			<h4 class="centered">Im an <span>Headline</span></h4>
-		</div>
-	</div>{# /.row #}
+	{# Spreasshirt Teaser Block #}
+	{{ page.spread_teaser }}
+
+	{# Orbit Carousel Block #}
+	{{ page.orbit }}
+
+	{# About Me Block #}
+	{{ page.about }}
 
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="medium-12 columns">
 			{{ page.content }}
 		</div>
 	</div>{# /.row #}
