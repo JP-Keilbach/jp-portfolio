@@ -13,17 +13,30 @@
 	{# About Me Block #}
 	{{ page.about }}
 
+	{# Slick Slider Block #}
 	<div class="row">
-		<div class="large-12 columns da-slider">
-
+		<div class="large-12 columns">
+			{{ page.portfolio }}
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="large-12 columns test">
+			{% include directory  ~ '/partials/slick.portfolio.html.twig' %}
+		</div>
+	</div>
+
+
+
+	{# Just on hold :)
 
 	<div class="row">
 		<div class="medium-12 columns">
 			{{ page.content }}
 		</div>
-	</div>{# /.row #}
+	</div>
+
+	#}
 
 	<div class="row">
 		<div class="large-12 columns">
@@ -36,4 +49,4 @@
 	</div>{# /.row #}
 
 
-</main>{# /.layout-container #}
+</main>

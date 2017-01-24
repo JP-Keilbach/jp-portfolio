@@ -11,6 +11,7 @@ regions:
   spread_teaser: 'Spreadshirt Teaser'
   orbit: 'Orbit Carousel'
   about: 'About Me'
+  portfolio: 'Portfolio'
   content: 'Main Content'
   footer: 'Footer'
   sidebar: 'Sidebar'
