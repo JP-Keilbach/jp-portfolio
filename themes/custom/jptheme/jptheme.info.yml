@@ -9,7 +9,7 @@ regions:
   header: 'Header'
   main_navigation: 'Main Navigation'
   spread_teaser: 'Spreadshirt Teaser'
-  orbit: 'Orbit Carousel'
+  slick_hero: 'Slick Hero'
   about: 'About Me'
   portfolio: 'Portfolio'
   content: 'Main Content'
@@ -24,5 +24,6 @@ regions:
   # content_2: Content 2
   # content_3: Content 3
   # content_4: Content 4
+  # orbit: 'Orbit Carousel'
 
 

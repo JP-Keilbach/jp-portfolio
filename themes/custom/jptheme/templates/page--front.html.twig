@@ -4,29 +4,22 @@
 
 	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-	{# Spreasshirt Teaser Block #}
+	{# Spreasshirt Teaser region #}
 	{{ page.spread_teaser }}
 
-	{# Orbit Carousel Block #}
-	{{ page.orbit }}
+	{# Slick Hero region #}
+	{% include directory  ~ '/partials/slick.hero.html.twig' %}
+	{# <div class="row">
+		{{ page.slick_hero }}
+	</div> #}
 
-	{# About Me Block #}
+	{# About Me region #}
 	{{ page.about }}
 
-	{# Slick Slider Block #}
-	<div class="row">
-		<div class="large-12 columns">
-			{{ page.portfolio }}
-		</div>
-	</div>
+	{# Slick Portfolio region #}
+	{% include directory  ~ '/partials/slick.portfolio.html.twig' %}
 
-	<div class="row">
-		<div class="large-12 columns test">
-			{% include directory  ~ '/partials/slick.portfolio.html.twig' %}
-		</div>
-	</div>
-
-
+</div>
 
 	{# Just on hold :)
 

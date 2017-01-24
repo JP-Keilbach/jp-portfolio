@@ -1,0 +1,51 @@
+// Slick Slider
+// ------------
+
+// Table of Content
+// - Slick Slider
+// - Slick Dots
+
+.slick-slider {
+	margin-bottom: 0;
+
+	// Slick Dots
+	// ----------
+	ul.slick-dots {
+		display: table;
+		height: rem-calc(48);
+		margin: 0 auto;
+
+		li {
+			float: left;
+			margin: rem-calc(0 4);
+
+			button {
+				display: block;
+				background: transparent;
+				width: rem-calc(8);
+				height: rem-calc(8);
+				padding-top: rem-calc(20);
+				color: transparent;
+				font-size: 0;
+				cursor: pointer;
+				border: 0;
+				outline: none;
+
+				&:before {
+					display: block;
+					content: '';
+					background: $dirt;
+					width: rem-calc(8);
+					height: rem-calc(8);
+					// text-align: center;
+
+					-webkit-font-smoothing: antialiased;
+				}
+			}
+
+			&.slick-active button:before {
+				background: $sunshine;
+			}
+		}
+	}
+}

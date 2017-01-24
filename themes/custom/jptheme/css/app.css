@@ -493,7 +493,7 @@ body {
   font-family: "klinic_slabbook", Times New Roman, sans;
   font-weight: normal;
   line-height: 1.5rem;
-  color: #222222;
+  color: #494a4a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1803,7 +1803,7 @@ cite {
 /* line 472, bower_components/foundation-sites/scss/typography/_base.scss */
 abbr {
   border-bottom: 1px dotted #0a0a0a;
-  color: #222222;
+  color: #494a4a;
   cursor: help; }
 
 /* line 479, bower_components/foundation-sites/scss/typography/_base.scss */
@@ -2503,7 +2503,7 @@ select {
   border: 1px solid #CDCDCD;
   border-bottom: 0;
   background-color: #fefefe;
-  color: #222222; }
+  color: #494a4a; }
   /* line 129, bower_components/foundation-sites/scss/components/_accordion.scss */
   :last-child > .accordion-content:last-child {
     border-bottom: 1px solid #CDCDCD; }
@@ -2747,7 +2747,7 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   background-color: white;
-  color: #222222; }
+  color: #494a4a; }
   /* line 55, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout > :first-child {
     margin-top: 0; }
@@ -2757,23 +2757,23 @@ select {
   /* line 93, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.primary {
     background-color: #fff7db;
-    color: #222222; }
+    color: #494a4a; }
   /* line 93, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.secondary {
     background-color: #dedede;
-    color: #222222; }
+    color: #494a4a; }
   /* line 93, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.success {
     background-color: #e1faea;
-    color: #222222; }
+    color: #494a4a; }
   /* line 93, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.warning {
     background-color: #fff3d9;
-    color: #222222; }
+    color: #494a4a; }
   /* line 93, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.alert {
     background-color: #f7e4e1;
-    color: #222222; }
+    color: #494a4a; }
   /* line 98, bower_components/foundation-sites/scss/components/_callout.scss */
   .callout.small {
     padding-top: 0.5rem;
@@ -2795,7 +2795,7 @@ select {
   background: #fefefe;
   box-shadow: none;
   overflow: hidden;
-  color: #222222; }
+  color: #494a4a; }
   /* line 72, bower_components/foundation-sites/scss/components/_card.scss */
   .card > :last-child {
     margin-bottom: 0; }
@@ -4316,11 +4316,11 @@ table {
   /* line 121, bower_components/foundation-sites/scss/components/_table.scss */
   thead {
     background: #f8f8f8;
-    color: #222222; }
+    color: #494a4a; }
   /* line 127, bower_components/foundation-sites/scss/components/_table.scss */
   tfoot {
     background: #f1f1f1;
-    color: #222222; }
+    color: #494a4a; }
   /* line 136, bower_components/foundation-sites/scss/components/_table.scss */
   thead tr, tfoot tr {
     background: transparent; }
@@ -4451,7 +4451,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border: 1px solid #CDCDCD;
   border-top: 0;
   background: #fefefe;
-  color: #222222;
+  color: #494a4a;
   transition: all 0.5s ease; }
 
 /* line 189, bower_components/foundation-sites/scss/components/_tabs.scss */
@@ -5394,7 +5394,6 @@ a.thumbnail {
 /* Typography */
 /* line 6, scss/_global.scss */
 body {
-  background: url("../assets/images/grid-24px.png") top left !important;
   font-family: "klinic_slabbook", Times New Roman, sans;
   box-sizing: border-box; }
 
@@ -5729,9 +5728,6 @@ hr.tile-underline-reverse {
       font-size: 0.875rem;
       text-transform: uppercase;
       text-align: center; }
-    /* line 256, scss/_navigation.scss */
-    .top-bar-right ul.menu li:nth-child(2) a {
-      border-left: 4px solid #222222; }
     /* line 258, scss/_navigation.scss */
     .top-bar-right ul.menu li a {
       background: white;
@@ -5802,6 +5798,42 @@ hr.tile-underline-reverse {
     /* line 17, scss/_orbit.scss */
     .orbit nav.orbit-bullets button.is-active {
       background-color: #FCC911; }
+
+/* line 8, scss/_slick.scss */
+.slick-slider {
+  margin-bottom: 0; }
+  /* line 13, scss/_slick.scss */
+  .slick-slider ul.slick-dots {
+    display: table;
+    height: 3rem;
+    margin: 0 auto; }
+    /* line 18, scss/_slick.scss */
+    .slick-slider ul.slick-dots li {
+      float: left;
+      margin: 0 0.25rem; }
+      /* line 22, scss/_slick.scss */
+      .slick-slider ul.slick-dots li button {
+        display: block;
+        background: transparent;
+        width: 0.5rem;
+        height: 0.5rem;
+        padding-top: 1.25rem;
+        color: transparent;
+        font-size: 0;
+        cursor: pointer;
+        border: 0;
+        outline: none; }
+        /* line 34, scss/_slick.scss */
+        .slick-slider ul.slick-dots li button:before {
+          display: block;
+          content: '';
+          background: #222222;
+          width: 0.5rem;
+          height: 0.5rem;
+          -webkit-font-smoothing: antialiased; }
+      /* line 46, scss/_slick.scss */
+      .slick-slider ul.slick-dots li.slick-active button:before {
+        background: #FCC911; }
 
 /* line 3, scss/_about.scss */
 .about-me-container .tile-header p {
