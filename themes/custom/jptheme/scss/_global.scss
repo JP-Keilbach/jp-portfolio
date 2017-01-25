@@ -4,7 +4,7 @@
 // --------------
 
 body {
-  // background: url('../assets/images/grid-24px.png') top left !important;
+  background: url('../assets/images/grid-24px.png') top left !important;
   font-family: $ks-book;
   box-sizing: border-box;
 }
@@ -74,6 +74,24 @@ h1.test {
 
 // Tiles
 // -----
+
+// -----------
+// Tile Header
+.tile-header {
+  h2 {
+    span {
+      font-family: $ks-bold;
+    }
+  }
+
+  p {
+    margin-bottom: rem-calc(48);
+    text-align: center;
+  }
+}
+
+// -----------
+// Tile Header
 .tile-container {
   overflow: hidden;
   padding-bottom: rem-calc(24);

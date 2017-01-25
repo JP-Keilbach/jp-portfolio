@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fec8e3-40d5-4a3b-9bb9-809bb39d8ab2" name="Default" comment="Added several node modules">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.hero.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_slick.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_portfolio.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/2017-01/01_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/2017-01/02_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/2017-01/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/2017-01/01_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/2017-01/02_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/2017-01/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/block--mycustomblock.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/css/app.css" afterPath="$PROJECT_DIR$/themes/custom/jptheme/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/css/maps/app.css.map" afterPath="$PROJECT_DIR$/themes/custom/jptheme/css/maps/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/jptheme.info.yml" afterPath="$PROJECT_DIR$/themes/custom/jptheme/jptheme.info.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/js/app.js" afterPath="$PROJECT_DIR$/themes/custom/jptheme/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss" afterPath="$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig" afterPath="$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +58,41 @@
       <file leaf-file-name="page--front.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="180">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
-                <marker date="1485287414000" expanded="true" signature="87:825" ph="..." />
+                <marker date="1485328187000" expanded="true" signature="87:768" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/header.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu--main.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block--aboutme.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,28 +100,18 @@
       <file leaf-file-name="slick.portfolio.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slick.hero.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/slick.hero.html.twig">
+      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_portfolio.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_slick.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_slick.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,18 +120,8 @@
       <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_settings.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state relative-caret-position="301">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -112,8 +130,18 @@
       <file leaf-file-name="_navigation.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="255" column="11" lean-forward="false" selection-start-line="255" selection-start-column="11" selection-end-line="255" selection-end-column="11" />
+            <state relative-caret-position="2340">
+              <caret line="242" column="20" lean-forward="true" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_settings.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -122,8 +150,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="375">
+              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -160,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/header.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/mycustomblock.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/html.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_test.scss" />
@@ -189,28 +216,29 @@
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_buttons.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/page.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/jptheme.theme" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_spreadteaser.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_orbit.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/block--spreadshirtteaser.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/block--orbitcarousel.html.twig" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/package.json" />
         <option value="$PROJECT_DIR$/modules/slick/README.txt" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/jptheme.libraries.yml" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/block--views-block--slick-block-1.html.twig" />
         <option value="$PROJECT_DIR$/core/modules/views/templates/views-view-list.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/jptheme.info.yml" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/js/app.js" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.hero.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_slick.scss" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss" />
-        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss" />
         <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_portfolio.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/js/app.js" />
+        <option value="$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig" />
       </list>
     </option>
   </component>
@@ -226,8 +254,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="1680" />
+    <option name="y" value="-390" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -247,8 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,6 +308,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jptheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jptheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,8 +415,100 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jptheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jptheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jp-portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jptheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +517,7 @@
     <property name="nodejs_interpreter_path" value="/opt/boxen/nodenv/shims/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/opt/boxen/nodenv/shims/node" />
-    <property name="SearchEverywhereHistoryKey" value="nav&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;globa&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_global.scss&#10;views&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/modules/views/templates/views-view-grouping.html.twig&#10;na&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;typography.scs&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/bower_components/foundation-sites/scss/typography/_typography.scss&#10;typogra&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/seven/css/base/typography.css&#10;navi&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;block.html.&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/stable/templates/block/block.html.twig&#10;header.twig&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/bartik/templates/region--header.html.twig&#10;header&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_header.scss&#10;top-bar-left&#9;null&#9;null&#10;menu&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/templates/menu--main.html.twig&#10;.git&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/.gitignore&#10;setting&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_settings.scss&#10;html.html&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/modules/system/templates/html.html.twig" />
+    <property name="SearchEverywhereHistoryKey" value="nav&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;sett&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_settings.scss&#10;globa&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_global.scss&#10;views&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/modules/views/templates/views-view-grouping.html.twig&#10;na&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;typography.scs&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/bower_components/foundation-sites/scss/typography/_typography.scss&#10;typogra&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/seven/css/base/typography.css&#10;navi&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_navigation.scss&#10;block.html.&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/stable/templates/block/block.html.twig&#10;header.twig&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/themes/bartik/templates/region--header.html.twig&#10;header&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_header.scss&#10;top-bar-left&#9;null&#9;null&#10;menu&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/templates/menu--main.html.twig&#10;.git&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/.gitignore&#10;setting&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/themes/custom/jptheme/scss/_settings.scss&#10;html.html&#9;FILE&#9;file:///Users/jpkeilbach/Sites/jp-portfolio/core/modules/system/templates/html.html.twig" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SCSS" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="FullScreen" value="true" />
@@ -486,7 +632,8 @@
       <workItem from="1485239752755" duration="290000" />
       <workItem from="1485251015815" duration="1626000" />
       <workItem from="1485254579934" duration="4432000" />
-      <workItem from="1485279512150" duration="6618000" />
+      <workItem from="1485279512150" duration="6867000" />
+      <workItem from="1485324729204" duration="5850000" />
     </task>
     <task id="LOCAL-00001" summary="Added several node modules">
       <created>1485195635374</created>
@@ -499,7 +646,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115130000" />
+    <option name="totallyTimeSpent" value="121229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,16 +658,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="1680" y="-390" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2820513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18546465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20612244" sideWeight="0.31623933" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2510204" sideWeight="0.6837607" order="11" side_tool="false" content_ui="tabs" x="803" y="505" width="80" height="40" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25019857" sideWeight="0.6837607" order="4" side_tool="false" content_ui="tabs" x="803" y="505" width="80" height="40" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -568,20 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/node_modules/gulp-sass/dest/test.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/gulpfile_old.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/package_old.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -653,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--mycustomblock.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_spreadteaser.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -681,20 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/slick_views/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/_block--views-block--slick-block-1.html.twig" />
     <entry file="file://$PROJECT_DIR$/core/modules/views/templates/views-view-list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -823,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,15 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,25 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <marker date="1485287414000" expanded="true" signature="87:825" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,22 +948,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="37" column="113" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss">
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_slick.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -901,34 +967,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_slick.scss">
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--mycustomblock.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="255" column="11" lean-forward="false" selection-start-line="255" selection-start-column="11" selection-end-line="255" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_settings.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--system-branding-block.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/page--front.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <marker date="1485328187000" expanded="true" signature="87:768" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_navigation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="242" column="20" lean-forward="true" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/scss/_portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/slick.portfolio.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/block--aboutme.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/partials/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/jptheme/templates/menu--main.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding />
         </state>
       </provider>
