@@ -4,7 +4,7 @@
 // --------------
 
 body {
-  background: url('../assets/images/grid-24px.png') top left !important;
+  // background: url('../assets/images/grid-24px.png') top left !important;
   font-family: $ks-book;
   box-sizing: border-box;
 }
@@ -78,7 +78,11 @@ h1.test {
 // -----------
 // Tile Header
 .tile-header {
-  h2 {
+  h4 {
+    display: table;
+    margin: 0 auto rem-calc(24) auto ;
+    border-bottom: 1px solid $light-grey;
+
     span {
       font-family: $ks-bold;
     }

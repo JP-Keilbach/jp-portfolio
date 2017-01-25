@@ -1,15 +1,21 @@
-// Slick Slider
-// ------------
+// Table of Content - Slick Slider
+// -------------------------------
+// 1.0 Slick Slider
+// 	1.1 Slick Dots
+// ---
+// 2.0 Slick Slider Portfolio
+// 	2.1 Stuff goes here
+// 	2.2 Stuff goes here
+// 	2.3 Stuff goes here
+// --------------------
 
-// Table of Content
-// - Slick Slider
-// - Slick Dots
-
+// 1.0 Slick Slider
+// ----------------
 .slick-slider {
 	margin-bottom: 0;
 
-	// Slick Dots
-	// ----------
+	// 1.1 Slick Dots
+	// --------------
 	ul.slick-dots {
 		display: table;
 		height: rem-calc(48);
@@ -37,7 +43,6 @@
 					background: $dirt;
 					width: rem-calc(8);
 					height: rem-calc(8);
-					// text-align: center;
 
 					-webkit-font-smoothing: antialiased;
 				}
@@ -49,3 +54,82 @@
 		}
 	}
 }
+
+// 2.0 Slick Slider Portfolio
+// --------------------------
+.slick-arrows-container {
+
+	ul.slick-arrows {
+		display: table;
+		height: rem-calc(48);
+		margin: 0 auto;
+
+		li {
+			float: left;
+			line-height: rem-calc(48);
+
+			&.left,
+			&.right {
+				color: $dark-gray;
+				cursor: pointer;
+				text-transform: uppercase;
+				padding: 0 rem-calc(25);
+				border-top: 1px solid $dark-gray;
+				border-bottom: 1px solid $dark-gray;
+
+				@include transition(background-color 0.5s ease, color 0.30s ease);
+
+				&:hover {
+					color: $dirt;
+				}
+			}
+
+			&:nth-child(2) {
+				// padding: rem-calc(0 10);
+			}
+
+			&.right {
+
+			}
+
+			img {
+				display: block;
+				height: rem-calc(48);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

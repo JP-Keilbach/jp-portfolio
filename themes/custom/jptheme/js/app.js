@@ -17,7 +17,7 @@
         speed: 2000,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000
     });
 
     $('.slick-portfolio').slick({
@@ -25,6 +25,8 @@
         slidesToScroll: 3,
         autoplay: false,
         autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -41,12 +43,32 @@
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
 
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
         ]
+    });
+
+    $('.left').click(function(){
+        $('.slick-portfolio').slick('slickPrev');
+    });
+
+    $('.right').click(function(){
+        $('.slick-portfolio').slick('slickNext');
+    });
+
+    // Change slick-dots position for Portfolio section
+    $('.slick-portfolio>.slick-dots:parent').each(function () {
+        $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
     });
 
 
