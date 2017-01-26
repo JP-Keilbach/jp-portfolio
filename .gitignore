@@ -6,3 +6,4 @@ node_modules
 npm-debug.log
 settings.php
 .idea/workspace.xml
+workspace.xml
