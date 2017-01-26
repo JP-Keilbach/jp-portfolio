@@ -1,0 +1,60 @@
+// Table of Content - Footer
+// -------------------------
+// 1.0 Footer
+// 	1.1 Element
+// 	1.2 Element
+// 	1.3 Element
+// -------------------------
+
+
+// Footer
+// ------
+footer {
+	background: $secondary-color;
+	padding: rem-calc(48 0);
+
+	h4 {
+		margin-bottom: 0;
+		color: $white;
+		font-family: $ks-light;
+		text-align: center;
+	}
+
+	a {
+		color: #8d8d8d;
+		text-transform: uppercase;
+	}
+
+	p {
+		display: table;
+		margin: 0 auto rem-calc(24) auto;
+		color: #8d8d8d;
+		font-size: rem-calc(16);
+		font-family: $ks-book;
+		text-align: center;
+		text-transform: uppercase;
+		border-top: 1px solid #4d4d4d;
+	}
+
+	.footer-menu-left,
+	.footer-menu-right {
+
+	}
+
+	ul.footer-menu-left {
+		float: right;
+		padding-right: rem-calc(10);
+		text-align: right;
+		border-right: 1px solid #4d4d4d;
+	}
+
+	ul.footer-menu-right {
+		float: left;
+		padding-left: rem-calc(10);
+		border-left: 1px solid #4d4d4d;
+	}
+}
+
+
+
+

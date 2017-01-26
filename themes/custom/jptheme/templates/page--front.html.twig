@@ -1,3 +1,19 @@
+{# 	This is the Front Page Template
+ *   	-------------------------------
+ *  Welcome to my Portfolio. This is were the Front Page magic happen.
+ *  	In order to display Regions below, you have to create them in jptheme.info.yml.
+ *
+ * 	|- Front Page
+ * 		|- Header 			| Include	| header.html.twig
+ * 		|- Spread Teaser 	| Block		| block--spreadshirtteaser.html.twig
+ * 		|- Slick Hero 		| Include	| slick-hero.html.twig
+ * 		|- About 			| Block		| block--aboutme.html.twig
+ * 		|- Slick Portfolio 	| Include	| slick-portfolio.html.twig
+ * 		|- Footer		 	| Block		| block--footer.html.twig
+ *
+ *	------------------------------------------------------------- #}
+
+
 {% include directory  ~ '/partials/header.html.twig' %}
 
 <main id="content" role="main">
@@ -8,35 +24,20 @@
 	{{ page.spread_teaser }}
 
 	{# Slick Hero region #}
-	{% include directory  ~ '/partials/slick.hero.html.twig' %}
+	{% include directory  ~ '/partials/slick-hero.html.twig' %}
 
 	{# About Me region #}
 	{{ page.about }}
 
 	{# Slick Portfolio region #}
-	{% include directory  ~ '/partials/slick.portfolio.html.twig' %}
+	{% include directory  ~ '/partials/slick-portfolio.html.twig' %}
 
-</div>
-
-	{# Just on hold :)
-
-	<div class="row">
-		<div class="medium-12 columns">
-			{{ page.content }}
-		</div>
-	</div>
-
-	#}
-
-	<div class="row">
-		<div class="large-12 columns">
-			{% if page.footer %}
-				<footer role="contentinfo">
-					{{ page.footer }}
-				</footer>
-			{% endif %}
-		</div>
-	</div>{# /.row #}
-
+	{# Just on hold #}
+	{# {{ page.content }} #}
 
 </main>
+
+{# Footer region #}
+{% if page.footer %}
+	{{ page.footer }}
+{% endif %}

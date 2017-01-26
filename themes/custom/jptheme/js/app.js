@@ -27,6 +27,9 @@
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
+        variableWidth: true,
+        centerMode: true,
+        centerPadding: '',
         responsive: [
             {
                 breakpoint: 1024,

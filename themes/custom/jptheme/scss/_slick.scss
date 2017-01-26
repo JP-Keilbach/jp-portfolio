@@ -3,11 +3,11 @@
 // 1.0 Slick Slider
 // 	1.1 Slick Dots
 // ---
-// 2.0 Slick Slider Portfolio
-// 	2.1 Stuff goes here
-// 	2.2 Stuff goes here
-// 	2.3 Stuff goes here
-// --------------------
+// 2.0 Slick arrow
+// 3.0 Slick Portfolio
+// 4.0 Minor styling correction
+// 5.0 Index goes here
+// -------------------------------
 
 // 1.0 Slick Slider
 // ----------------
@@ -53,10 +53,19 @@
 			}
 		}
 	}
+
+	.slick-list {
+		.slick-track {
+			.slick-slide{
+				// padding: 0;
+				// width: 333.328px !important;
+			}
+		}
+	}
 }
 
-// 2.0 Slick Slider Portfolio
-// --------------------------
+// 2.0 Slick arrows
+// ----------------
 .slick-arrows-container {
 
 	ul.slick-arrows {
@@ -70,12 +79,13 @@
 
 			&.left,
 			&.right {
-				color: $dark-gray;
-				cursor: pointer;
-				text-transform: uppercase;
 				padding: 0 rem-calc(25);
 				border-top: 1px solid $dark-gray;
 				border-bottom: 1px solid $dark-gray;
+				color: $dark-gray;
+				cursor: pointer;
+				line-height: rem-calc(46);
+				text-transform: uppercase;
 
 				@include transition(background-color 0.5s ease, color 0.30s ease);
 
@@ -98,38 +108,41 @@
 	}
 }
 
+// 3.0 Slick Portfolio
+// -------------------
 .slick-portfolio {
+
+	.slick-slide {
+		width: 333.328px;
+	}
+
 	.tile-slick-portfolio {
+		float: left;
+
 		ul {
+			float: left;
+			width: 100%;
+			padding: rem-calc(0 10px);
+			margin: 0;
+
 			li {
-				padding: rem-calc(0 10);
+				float: left;
+				// padding: rem-calc(0 10);
 				font-size: rem-calc(14);
 				text-transform: uppercase;
 
 				&:nth-child(1) {
-					float: left;
-					// padding-left: rem-calc(10);
-				}
+					padding: rem-calc(o 10px);
 
-				&:nth-child(2) {
-					float: right;
-					// padding-left: rem-calc(10);
-					border-left: 1px solid $light-gray;
-				}
+					i {
 
-				line-height: rem-calc(48);
-
-				a {
-					display: table;
-					float: right;
-					height: rem-calc(48);
-					// padding-left: rem-calc(10);
-
-					span {
-						display: table-cell;
-						padding-right: rem-calc(10);
-						line-height: rem-calc(48);
 					}
+				}
+
+				&:nth-child(3) {
+					float: right;
+					padding: rem-calc(0 10);
+					border-left: 1px solid $light-gray;
 
 					i.icon-go-to {
 						display: table-cell;
@@ -139,9 +152,40 @@
 						height: rem-calc(24);
 					}
 				}
+
+				line-height: rem-calc(48);
+
+				a {
+					display: table;
+					float: right;
+					height: rem-calc(48);
+
+					span {
+						display: table-cell;
+						padding-right: rem-calc(10);
+						line-height: rem-calc(48);
+					}
+				}
+			}
+		}
+
+		.portfolio-image {
+			// width: rem-calc(320);
+			margin-right: 0;
+
+			img {
+				// width: rem-calc(320);
 			}
 		}
 	}
+}
+
+// 4.0 Minor styling correction
+// ----------------------------
+
+// remove outside padding from column container
+.slick-columns {
+	padding: 0;
 }
 
 

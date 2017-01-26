@@ -4,7 +4,7 @@
 // --------------
 
 body {
-  // background: url('../assets/images/grid-24px.png') top left !important;
+  background: url('../assets/images/grid-24px.png') top left !important;
   font-family: $ks-book;
   box-sizing: border-box;
 }
@@ -72,6 +72,13 @@ h1.test {
   color: $sunshine;
 }
 
+// Link behaviour
+// --------------
+
+a {
+
+}
+
 // Tiles
 // -----
 
@@ -82,6 +89,7 @@ h1.test {
     display: table;
     margin: 0 auto rem-calc(24) auto ;
     border-bottom: 1px solid $light-grey;
+    line-height: rem-calc(47);
 
     span {
       font-family: $ks-bold;
@@ -114,8 +122,8 @@ h1.test {
 
     h5 {
       display: table;
-      margin: rem-calc(0) auto rem-calc(23) auto; // 23 because of border-bottom
-      line-height: rem-calc(48);
+      margin: rem-calc(0) auto rem-calc(24) auto;
+      line-height: rem-calc(47);
       border-bottom: 1px solid $light-gray;
 
     }
