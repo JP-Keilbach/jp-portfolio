@@ -5900,10 +5900,41 @@ hr.tile-underline-reverse {
       /* line 82, scss/_slick.scss */
       .slick-arrows-container ul.slick-arrows li.left:hover, .slick-arrows-container ul.slick-arrows li.right:hover {
         color: #222222; }
-    /* line 95, scss/_slick.scss */
+    /* line 93, scss/_slick.scss */
     .slick-arrows-container ul.slick-arrows li img {
       display: block;
       height: 3rem; }
+
+/* line 104, scss/_slick.scss */
+.slick-portfolio .tile-slick-portfolio ul li {
+  padding: 0 0.625rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 3rem; }
+  /* line 109, scss/_slick.scss */
+  .slick-portfolio .tile-slick-portfolio ul li:nth-child(1) {
+    float: left; }
+  /* line 114, scss/_slick.scss */
+  .slick-portfolio .tile-slick-portfolio ul li:nth-child(2) {
+    float: right;
+    border-left: 1px solid #CDCDCD; }
+  /* line 122, scss/_slick.scss */
+  .slick-portfolio .tile-slick-portfolio ul li a {
+    display: table;
+    float: right;
+    height: 3rem; }
+    /* line 128, scss/_slick.scss */
+    .slick-portfolio .tile-slick-portfolio ul li a span {
+      display: table-cell;
+      padding-right: 0.625rem;
+      line-height: 3rem; }
+    /* line 134, scss/_slick.scss */
+    .slick-portfolio .tile-slick-portfolio ul li a i.icon-go-to {
+      display: table-cell;
+      background: url("../assets/images/icon-go-to.svg") center center no-repeat transparent;
+      line-height: 3rem;
+      width: 1.75rem;
+      height: 1.5rem; }
 
 /* line 6, scss/_about.scss */
 .about-me-container .tile-container img {
