@@ -76,7 +76,7 @@ h1.test {
 // --------------
 
 a {
-
+  @include transition(color 0.5s ease, color 0.30s ease);
 }
 
 // Tiles

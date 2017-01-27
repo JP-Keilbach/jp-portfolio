@@ -5470,6 +5470,10 @@ h1.test {
   font-family: "klinic_slabbook", Times New Roman, sans;
   color: #FCC911; }
 
+/* line 78, scss/_global.scss */
+a {
+  transition: color 0.5s ease, color 0.3s ease; }
+
 /* line 88, scss/_global.scss */
 .tile-header h4 {
   display: table;
@@ -5919,9 +5923,10 @@ hr.tile-underline-reverse {
   .slick-portfolio .tile-slick-portfolio ul {
     float: left;
     width: 100%;
-    padding: 0 0.625rem;
-    margin: 0; }
-    /* line 128, scss/_slick.scss */
+    padding: 0;
+    margin: 1.1875rem 0 0 0;
+    border-top: 1px solid #AAAAAA; }
+    /* line 129, scss/_slick.scss */
     .slick-portfolio .tile-slick-portfolio ul li {
       float: left;
       font-size: 0.875rem;
@@ -5929,34 +5934,42 @@ hr.tile-underline-reverse {
       line-height: 3rem; }
       /* line 134, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li:nth-child(1) {
-        padding: o 0.625rem; }
-      /* line 142, scss/_slick.scss */
+        margin-right: 0.625rem;
+        border-right: 1px solid #CDCDCD; }
+        /* line 138, scss/_slick.scss */
+        .slick-portfolio .tile-slick-portfolio ul li:nth-child(1) i {
+          display: block;
+          width: 3rem;
+          font-family: "klinic_slabbold", Times New Roman, sans;
+          font-style: normal;
+          text-align: center; }
+      /* line 147, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li:nth-child(3) {
         float: right;
         padding: 0 0.625rem;
         border-left: 1px solid #CDCDCD; }
-        /* line 147, scss/_slick.scss */
+        /* line 152, scss/_slick.scss */
         .slick-portfolio .tile-slick-portfolio ul li:nth-child(3) i.icon-go-to {
           display: table-cell;
           background: url("../assets/images/icon-go-to.svg") center center no-repeat transparent;
           line-height: 3rem;
           width: 1.75rem;
           height: 1.5rem; }
-      /* line 158, scss/_slick.scss */
+      /* line 163, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li a {
         display: table;
         float: right;
         height: 3rem; }
-        /* line 163, scss/_slick.scss */
+        /* line 168, scss/_slick.scss */
         .slick-portfolio .tile-slick-portfolio ul li a span {
           display: table-cell;
           padding-right: 0.625rem;
           line-height: 3rem; }
-  /* line 172, scss/_slick.scss */
+  /* line 177, scss/_slick.scss */
   .slick-portfolio .tile-slick-portfolio .portfolio-image {
     margin-right: 0; }
 
-/* line 187, scss/_slick.scss */
+/* line 193, scss/_slick.scss */
 .slick-columns {
   padding: 0; }
 
@@ -5970,17 +5983,20 @@ hr.tile-underline-reverse {
 footer {
   background: #222222;
   padding: 3rem 0; }
-  /* line 16, scss/_footer.scss */
+  /* line 17, scss/_footer.scss */
   footer h4 {
     margin-bottom: 0;
     color: #FFFFFF;
     font-family: "klinic_slablight", Times New Roman, sans;
     text-align: center; }
-  /* line 23, scss/_footer.scss */
+  /* line 24, scss/_footer.scss */
   footer a {
     color: #8d8d8d;
     text-transform: uppercase; }
-  /* line 28, scss/_footer.scss */
+    /* line 28, scss/_footer.scss */
+    footer a:hover {
+      color: #FFFFFF; }
+  /* line 31, scss/_footer.scss */
   footer p {
     display: table;
     margin: 0 auto 1.5rem auto;
@@ -5989,17 +6005,60 @@ footer {
     font-family: "klinic_slabbook", Times New Roman, sans;
     text-align: center;
     text-transform: uppercase;
+    line-height: 1.4375rem;
     border-top: 1px solid #4d4d4d; }
-  /* line 44, scss/_footer.scss */
-  footer ul.footer-menu-left {
+  /* line 51, scss/_footer.scss */
+  footer .footer-menu-container .row:nth-child(2) .columns:nth-child(1) {
+    padding-right: 1.25rem; }
+  /* line 55, scss/_footer.scss */
+  footer .footer-menu-container .row:nth-child(2) .columns:nth-child(2) {
+    padding: 0; }
+    /* line 58, scss/_footer.scss */
+    footer .footer-menu-container .row:nth-child(2) .columns:nth-child(2) a {
+      display: block; }
+      /* line 61, scss/_footer.scss */
+      footer .footer-menu-container .row:nth-child(2) .columns:nth-child(2) a img {
+        display: table;
+        margin: 0 auto; }
+  /* line 68, scss/_footer.scss */
+  footer .footer-menu-container .row:nth-child(2) .columns:nth-child(3) {
+    padding-left: 1.25rem; }
+  /* line 78, scss/_footer.scss */
+  footer .footer-menu-container ul.footer-menu-left {
     float: right;
     padding-right: 0.625rem;
     text-align: right;
     border-right: 1px solid #4d4d4d; }
-  /* line 51, scss/_footer.scss */
-  footer ul.footer-menu-right {
+  /* line 85, scss/_footer.scss */
+  footer .footer-menu-container ul.footer-menu-right {
     float: left;
     padding-left: 0.625rem;
     border-left: 1px solid #4d4d4d; }
+  /* line 94, scss/_footer.scss */
+  footer .footer-menu-social-container {
+    padding: 1.5rem 0; }
+    /* line 97, scss/_footer.scss */
+    footer .footer-menu-social-container p {
+      width: 100%;
+      line-height: 1.375rem;
+      border-bottom: 1px solid #4d4d4d; }
+    /* line 104, scss/_footer.scss */
+    footer .footer-menu-social-container ul {
+      display: table;
+      height: 3rem;
+      margin: 0 auto; }
+      /* line 109, scss/_footer.scss */
+      footer .footer-menu-social-container ul li {
+        float: left;
+        padding: 0 0.5rem; }
+        /* line 113, scss/_footer.scss */
+        footer .footer-menu-social-container ul li:first-child {
+          padding-left: 0; }
+        /* line 117, scss/_footer.scss */
+        footer .footer-menu-social-container ul li:last-child {
+          padding-right: 0; }
+        /* line 123, scss/_footer.scss */
+        footer .footer-menu-social-container ul li a img {
+          height: 3.5rem; }
 
 /*# sourceMappingURL=maps/app.css.map */
