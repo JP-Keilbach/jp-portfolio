@@ -2,8 +2,8 @@ global-styling:
   version: 1.x
   css:
     theme:
-      assets/klinic-slab/stylesheet.css: {}
-      assets/franchise/stylesheet.css: {}
+      assets/fonts/klinic-slab/stylesheet.css: {}
+      assets/fonts/franchise/stylesheet.css: {}
       /libraries/slick/slick/slick.css: {}
       css/font-awesome.css: {}
       css/app.css: {}
@@ -11,7 +11,9 @@ global-styling:
     bower_components/what-input/dist/what-input.js: {}
     bower_components/foundation-sites/dist/js/foundation.js: {}
     /libraries/slick/slick/slick.min.js: {}
+    js/snap.svg-min.js: {}
     js/app.js: {}
+
   dependencies:
     - core/jquery
     - core/jquery.one

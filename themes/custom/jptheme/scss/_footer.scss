@@ -119,11 +119,24 @@ footer {
 				}
 
 				a {
+					display: block;
 
 					img {
 						height: rem-calc(56);
 					}
 				}
+			}
+		}
+
+
+		#icon-facebook {
+			height: rem-calc(56);
+			width: rem-calc(56);
+
+			.active-segment { fill: $sunshine; }
+
+			#outer-segments {
+				color: red;
 			}
 		}
 	}

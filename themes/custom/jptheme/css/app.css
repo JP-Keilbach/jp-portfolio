@@ -6057,8 +6057,21 @@ footer {
         /* line 117, scss/_footer.scss */
         footer .footer-menu-social-container ul li:last-child {
           padding-right: 0; }
-        /* line 123, scss/_footer.scss */
-        footer .footer-menu-social-container ul li a img {
-          height: 3.5rem; }
+        /* line 121, scss/_footer.scss */
+        footer .footer-menu-social-container ul li a {
+          display: block; }
+          /* line 124, scss/_footer.scss */
+          footer .footer-menu-social-container ul li a img {
+            height: 3.5rem; }
+    /* line 132, scss/_footer.scss */
+    footer .footer-menu-social-container #icon-facebook {
+      height: 3.5rem;
+      width: 3.5rem; }
+      /* line 136, scss/_footer.scss */
+      footer .footer-menu-social-container #icon-facebook .active-segment {
+        fill: #FCC911; }
+      /* line 138, scss/_footer.scss */
+      footer .footer-menu-social-container #icon-facebook #outer-segments {
+        color: red; }
 
 /*# sourceMappingURL=maps/app.css.map */
