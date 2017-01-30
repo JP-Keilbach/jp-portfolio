@@ -107,24 +107,82 @@
 
         var animating = true;
 
-        var a = ["a", "b", "c"];
-
 
         function animOn() {
 
-            var sg = s.group(s1, s2, s3, s4, s5, s6);
-
             if(animating) {
-                outerSegments.animate({
+
+                // Ansatz Julian
+                // -------------
+                // for (i = 1; i<7; i++) {
+                    // console.log(i);
+                    // var id = i;
+                    // setTimeout(function() {animInElement(id)},(id-1)*200);
+                // }
+
+                // setTimeout( function() {
+                    // s1.animate({ fill: '#fcc911' });
+                // }, 200, animOut );
+
+                // Ansatz Jan v1
+                // -------------
+                /* outerSegments.animate({
                     fill: '#fcc911'
-                }, 200, animOut);
+                }, 200, animOut); */
+
+                // Ansatz Jan v2
+                // -------------
+                var sg = s.selectAll('.sg');
+                // console.log(sg);
+
+                sg.forEach(function(el, index) {
+
+                    var p = s.select('#s' + (index + 1));
+                    console.log('output var p: ' + p);
+
+                    p.animate({ fill: '#fcc911'}, 200, animOut);
+                });
             }
         }
 
+        // Ansatz Julian
+        // -------------
+        /* function animInElement(id) {
+            console.log(id);
+            s.select('#s'+id).animate({
+                fill: '#fcc911'
+            }, 200, animOut(id));
+        } */
+
         function animOut() {
-            outerSegments.animate({
+            // Ansatz Julian
+            // -------------
+            // s.select('#s'+id).animate({
+                // fill: '#4d4d4d'
+            // }, 200, animOn);
+
+            // setTimeout( function() {
+                // s1.animate({ fill: '#4d4d4d' });
+            // }, 200, animOn );
+
+            // Ansatz Jan v1
+            // -------------
+            /* outerSegments.animate({
                 fill: '#4d4d4d'
-            }, 200, animOn);
+            }, 200, animOn); */
+
+            // Ansatz Jan v2
+            // -------------
+            var sg = s.selectAll('.sg');
+            // console.log(sg);
+
+            sg.forEach(function(el, index) {
+
+                var p = s.select('#s' + (index + 1));
+                console.log('output var p: ' + p);
+
+                p.animate({ fill: '#4d4d4d'}, 200, animOn);
+            });
         };
 
         s.hover(function() { animating=true; animOn() }, function() { animating=false });

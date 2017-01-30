@@ -5394,7 +5394,6 @@ a.thumbnail {
 /* Typography */
 /* line 6, scss/_global.scss */
 body {
-  background: url("../assets/images/grid-24px.png") top left !important;
   font-family: "klinic_slabbook", Times New Roman, sans;
   box-sizing: border-box; }
 

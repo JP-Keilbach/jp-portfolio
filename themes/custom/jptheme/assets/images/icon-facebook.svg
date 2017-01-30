@@ -4,12 +4,12 @@
   </defs>
   <title>icon-facebook</title>
   <g id="outer-segments">
-    <path id="s6" class="cls-1" fill="" d="M16.27,10.22l2,3.46L10,18.45V28H6V16.14Z" transform="translate(-6 -2.29)"/>
-    <path id="s5" class="cls-1" fill="" d="M10,32H6V43.86l10.27,5.93,2-3.46L10,41.55Z" transform="translate(-6 -2.29)"/>
-    <path id="s4" class="cls-1" fill="" d="M30,53.09l-8.27-4.77-2,3.46L30,57.71l10.27-5.93-2-3.46Z" transform="translate(-6 -2.29)"/>
-    <path id="s3" class="cls-1" fill="" d="M50,41.55l-8.27,4.77,2,3.46L54,43.86V32H50Z" transform="translate(-6 -2.29)"/>
-    <path id="s2" class="cls-1" fill="" d="M43.73,10.22l-2,3.46L50,18.45V28h4V16.14Z" transform="translate(-6 -2.29)"/>
-    <path id="s1" class="cls-1" fill="" d="M30,2.29,40.27,8.22l-2,3.46L30,6.91l-8.27,4.77-2-3.46Z" transform="translate(-6 -2.29)"/>
+    <path id="s6" class="sg" fill="" d="M16.27,10.22l2,3.46L10,18.45V28H6V16.14Z" transform="translate(-6 -2.29)"/>
+    <path id="s5" class="sg" fill="" d="M10,32H6V43.86l10.27,5.93,2-3.46L10,41.55Z" transform="translate(-6 -2.29)"/>
+    <path id="s4" class="sg" fill="" d="M30,53.09l-8.27-4.77-2,3.46L30,57.71l10.27-5.93-2-3.46Z" transform="translate(-6 -2.29)"/>
+    <path id="s3" class="sg" fill="" d="M50,41.55l-8.27,4.77,2,3.46L54,43.86V32H50Z" transform="translate(-6 -2.29)"/>
+    <path id="s2" class="sg" fill="" d="M43.73,10.22l-2,3.46L50,18.45V28h4V16.14Z" transform="translate(-6 -2.29)"/>
+    <path id="s1" class="sg" fill="" d="M30,2.29,40.27,8.22l-2,3.46L30,6.91l-8.27,4.77-2-3.46Z" transform="translate(-6 -2.29)"/>
   </g>
   <path id="inner-segment" class="cls-1" d="M30,10.37,13,20.19V39.81l17,9.81,17-9.81V20.19ZM46,39.24,30,48.48,14,39.24V20.76l16-9.24,16,9.24Z" transform="translate(-6 -2.29)"/>
   <path id="facebook" class="cls-1" d="M32.59,24.17H34V21.82a17.37,17.37,0,0,0-2-.11,3.19,3.19,0,0,0-3.4,3.49v1.95H26.28v2.64h2.28v6.78h2.73V29.79h2.27l.35-2.64H31.28V25.46C31.28,24.7,31.49,24.17,32.59,24.17Z" transform="translate(-6 -2.29)"/>

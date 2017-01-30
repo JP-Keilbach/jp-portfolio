@@ -12,6 +12,7 @@ regions:
   slick_hero: 'Slick Hero'
   about: 'About Me'
   portfolio: 'Portfolio'
+  contact: 'contact'
   content: 'Main Content'
   footer: 'Footer'
   sidebar: 'Sidebar'
