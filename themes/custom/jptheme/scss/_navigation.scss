@@ -308,22 +308,31 @@
 	}
 }
 
+#responsive-menu {
+	.columns:nth-child(2) {
+		@include breakpoint(small only) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
 
 
 // Special breakpoint rules
 // ------------------------
 
 // Make Social Menu disappear on the right side
-.disappear-on-medium {
-	@include breakpoint(small only) {
-		padding-left: 0;
-		padding-right: 0;
-	}
+#responsive-menu {
+	.disappear-on-medium {
 
-	@include breakpoint(medium only) {
-		display: none;
+
+		@include breakpoint(medium only) {
+			display: none;
+		}
 	}
 }
+
 
 // Get rid of column padding on medium only
 #responsive-menu {

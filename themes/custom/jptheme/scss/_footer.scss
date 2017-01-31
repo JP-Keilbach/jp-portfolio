@@ -129,15 +129,13 @@ footer {
 		}
 
 
-		#icon-facebook {
+		#icon-instagram,
+		#icon-dribbble,
+		#icon-behance,
+		#icon-facebook,
+		#icon-twitter {
 			height: rem-calc(56);
-			width: rem-calc(56);
-
-			.active-segment { fill: $sunshine; }
-
-			#outer-segments {
-				color: red;
-			}
+			widows: auto;
 		}
 	}
 }
