@@ -252,7 +252,7 @@
 	border-top: 4px solid $dirt;
 	border-bottom: 4px solid $dirt;
 
-	ul.nav-portfolio {
+	ul#nav-portfolio {
 		display: table;
 		margin: 0 auto;
 
@@ -275,7 +275,7 @@
 // Styling for hover behavior
 // --------------------------
 .top-bar-left,
-.nav-portfolio {
+#nav-portfolio {
 	li a {
 		position: relative;
 		padding: rem-calc(0 12);
@@ -324,9 +324,7 @@
 
 // Make Social Menu disappear on the right side
 #responsive-menu {
-	.disappear-on-medium {
-
-
+	.columns:nth-child(2) {
 		@include breakpoint(medium only) {
 			display: none;
 		}

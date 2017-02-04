@@ -5545,6 +5545,16 @@ hr.tile-underline-reverse {
     padding: 0;
     bottom: 0.375rem; }
 
+@media print, screen and (min-width: 48em) {
+  /* line 183, scss/_global.scss */
+  .disappear-on-medium {
+    display: none; } }
+
+@media screen and (max-width: 47.9375em) {
+  /* line 189, scss/_global.scss */
+  .disappear-on-small {
+    display: none; } }
+
 /* line 1, scss/_buttons.scss */
 .button {
   border: none; }
@@ -5743,14 +5753,14 @@ hr.tile-underline-reverse {
   border-top: 4px solid #222222;
   border-bottom: 4px solid #222222; }
   /* line 255, scss/_navigation.scss */
-  .nav-portfolio-container ul.nav-portfolio {
+  .nav-portfolio-container ul#nav-portfolio {
     display: table;
     margin: 0 auto; }
     /* line 260, scss/_navigation.scss */
-    .nav-portfolio-container ul.nav-portfolio li {
+    .nav-portfolio-container ul#nav-portfolio li {
       float: left; }
       /* line 263, scss/_navigation.scss */
-      .nav-portfolio-container ul.nav-portfolio li a {
+      .nav-portfolio-container ul#nav-portfolio li a {
         display: block;
         padding: 0 0.625rem;
         color: #494A4A;
@@ -5760,7 +5770,7 @@ hr.tile-underline-reverse {
 
 /* line 279, scss/_navigation.scss */
 .top-bar-left li a,
-.nav-portfolio li a {
+#nav-portfolio li a {
   position: relative;
   padding: 0 0.75rem;
   font-size: 0.875rem;
@@ -5770,7 +5780,7 @@ hr.tile-underline-reverse {
 
 /* line 289, scss/_navigation.scss */
 .top-bar-left li a:before,
-.nav-portfolio li a:before {
+#nav-portfolio li a:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -5783,7 +5793,7 @@ hr.tile-underline-reverse {
 
 /* line 304, scss/_navigation.scss */
 .top-bar-left li a:hover:before,
-.nav-portfolio li a:hover:before {
+#nav-portfolio li a:hover:before {
   visibility: visible;
   transform: scaleX(1); }
 
@@ -5795,36 +5805,36 @@ hr.tile-underline-reverse {
 
 @media screen and (min-width: 48em) and (max-width: 63.9375em) {
   /* line 327, scss/_navigation.scss */
-  #responsive-menu .disappear-on-medium {
+  #responsive-menu .columns:nth-child(2) {
     display: none; } }
 
 @media screen and (max-width: 63.9375em) {
-  /* line 339, scss/_navigation.scss */
+  /* line 337, scss/_navigation.scss */
   #responsive-menu .columns {
     padding-right: 0; } }
 
-/* line 348, scss/_navigation.scss */
+/* line 346, scss/_navigation.scss */
 .np-top {
   padding-top: 0; }
 
-/* line 349, scss/_navigation.scss */
+/* line 347, scss/_navigation.scss */
 .np-right {
   padding-right: 0; }
 
-/* line 350, scss/_navigation.scss */
+/* line 348, scss/_navigation.scss */
 .np-bottom {
   padding-bottom: 0; }
 
-/* line 351, scss/_navigation.scss */
+/* line 349, scss/_navigation.scss */
 .np-left {
   padding-left: 0; }
 
-/* line 353, scss/_navigation.scss */
+/* line 351, scss/_navigation.scss */
 .np-left-right {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 358, scss/_navigation.scss */
+/* line 356, scss/_navigation.scss */
 .np-top-bottom {
   padding-top: 0;
   padding-bottom: 0; }
@@ -6024,51 +6034,71 @@ footer {
     padding-left: 1.25rem; }
   /* line 78, scss/_footer.scss */
   footer .footer-menu-container ul.footer-menu-left {
+    display: inline-block;
     float: right;
     padding-right: 0.625rem;
+    margin-top: 1.5rem;
     text-align: right;
     border-right: 1px solid #4d4d4d; }
-  /* line 85, scss/_footer.scss */
+    @media screen and (max-width: 47.9375em) {
+      /* line 78, scss/_footer.scss */
+      footer .footer-menu-container ul.footer-menu-left {
+        float: left;
+        width: 48%;
+        margin: 0 2% 1.5rem 0; } }
+  /* line 93, scss/_footer.scss */
   footer .footer-menu-container ul.footer-menu-right {
+    display: inline-block;
     float: left;
     padding-left: 0.625rem;
+    margin-top: 1.5rem;
     border-left: 1px solid #4d4d4d; }
-  /* line 94, scss/_footer.scss */
+    @media screen and (max-width: 47.9375em) {
+      /* line 93, scss/_footer.scss */
+      footer .footer-menu-container ul.footer-menu-right {
+        text-align: left;
+        width: 48%;
+        margin: 0 0 1.5rem 2%; } }
+  /* line 111, scss/_footer.scss */
   footer .footer-menu-social-container {
     padding: 1.5rem 0; }
-    /* line 97, scss/_footer.scss */
+    /* line 114, scss/_footer.scss */
     footer .footer-menu-social-container p {
       width: 100%;
       line-height: 1.375rem;
       border-bottom: 1px solid #4d4d4d; }
-    /* line 104, scss/_footer.scss */
+    /* line 121, scss/_footer.scss */
     footer .footer-menu-social-container ul {
       display: table;
       height: 3rem;
       margin: 0 auto; }
-      /* line 109, scss/_footer.scss */
+      /* line 126, scss/_footer.scss */
       footer .footer-menu-social-container ul li {
         float: left;
         padding: 0 0.5rem; }
-        /* line 113, scss/_footer.scss */
+        /* line 130, scss/_footer.scss */
         footer .footer-menu-social-container ul li:first-child {
           padding-left: 0; }
-        /* line 117, scss/_footer.scss */
+        /* line 134, scss/_footer.scss */
         footer .footer-menu-social-container ul li:last-child {
           padding-right: 0; }
-        /* line 121, scss/_footer.scss */
+        /* line 138, scss/_footer.scss */
         footer .footer-menu-social-container ul li a {
           display: block; }
-          /* line 124, scss/_footer.scss */
+          /* line 141, scss/_footer.scss */
           footer .footer-menu-social-container ul li a img {
             height: 3.5rem; }
-    /* line 132, scss/_footer.scss */
+    /* line 148, scss/_footer.scss */
     footer .footer-menu-social-container #icon-instagram,
     footer .footer-menu-social-container #icon-dribbble,
     footer .footer-menu-social-container #icon-behance,
     footer .footer-menu-social-container #icon-facebook,
     footer .footer-menu-social-container #icon-twitter {
-      height: 3.5rem;
-      widows: auto; }
+      height: 3.375rem;
+      width: auto; }
+  /* line 159, scss/_footer.scss */
+  footer .logo-footer-container a {
+    display: table;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -179,7 +179,17 @@ hr.tile-underline-reverse {
 // Media Query behaviour
 // ---------------------
 
+@include breakpoint(medium) {
+  .disappear-on-medium {
+    display: none;
+  }
+}
 
+@include breakpoint(small only) {
+  .disappear-on-small {
+    display: none;
+  }
+}
 
 
 

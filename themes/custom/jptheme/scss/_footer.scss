@@ -76,16 +76,33 @@ footer {
 		}
 
 		ul.footer-menu-left {
+			display: inline-block;
 			float: right;
 			padding-right: rem-calc(10);
+			margin-top: rem-calc(24);
 			text-align: right;
 			border-right: 1px solid #4d4d4d;
+
+			@include breakpoint(small only) {
+				float: left;
+				width: 48%;
+				margin: 0 2% rem-calc(24) 0;
+			}
 		}
 
 		ul.footer-menu-right {
+			display: inline-block;
 			float: left;
 			padding-left: rem-calc(10);
+			margin-top: rem-calc(24);
 			border-left: 1px solid #4d4d4d;
+
+
+			@include breakpoint(small only) {
+				text-align: left;
+				width: 48%;
+				margin: 0 0 rem-calc(24) 2%;
+			}
 		}
 	}
 
@@ -128,14 +145,20 @@ footer {
 			}
 		}
 
-
 		#icon-instagram,
 		#icon-dribbble,
 		#icon-behance,
 		#icon-facebook,
 		#icon-twitter {
-			height: rem-calc(56);
-			widows: auto;
+			height: rem-calc(54);
+			width: auto;
+		}
+	}
+
+	.logo-footer-container {
+		a {
+			display: table;
+			margin: 0 auto;
 		}
 	}
 }

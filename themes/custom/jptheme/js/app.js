@@ -58,13 +58,88 @@
         ]
     });
 
+
+    /**
+     * ----------------------------------
+     * Filtering Slick Slides by category
+     * ----------------------------------
+     * @type {boolean}
+     */
+    var filtered = false;
+
+    /** All Filter **/
+    $('.all-filters').on('click', function () {
+        $('.active').removeClass('active');
+        $('.all-filters').addClass('active');
+        $('.slick-portfolio').slick('slickUnfilter');
+
+        /** Move Dots on top of Slideshow **/
+        $('.slick-portfolio>.slick-dots:parent').each(function () {
+            $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
+        });
+
+        filtered = false;
+    });
+
+    /** Sites Filter **/
+    $('.sites-filter').on('click', function () {
+        $('.slick-portfolio').slick('slickUnfilter');
+        $('.slick-portfolio').slick('slickFilter', '.sites');
+        $('.active').removeClass('active');
+        $('.sites-filter').addClass('active');
+
+        /** Move Dots on top of Slideshow **/
+        $('.slick-portfolio>.slick-dots:parent').each(function () {
+            $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
+        });
+
+        filtered = true;
+    });
+
+    /** Logo Filter **/
+    $('.logo-filter').on('click', function () {
+        $('.slick-portfolio').slick('slickUnfilter');
+        $('.slick-portfolio').slick('slickFilter', '.logo');
+        $('.active').removeClass('active');
+        $('.logo-filter').addClass('active');
+
+        /** Move Dots on top of Slideshow **/
+        $('.slick-portfolio>.slick-dots:parent').each(function () {
+            $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
+        });
+
+        filtered = true;
+    });
+
+    /* $('.print-filter').on('click', function () {
+        $('.slick-portfolio').slick('slickFilter', '.print');
+        $('.active').removeClass('active');
+        $('.print-filter').addClass('active');
+        filtered = true;
+    }); */
+
+    /** Animation Filter **/
+    $('.animation-filter').on('click', function () {
+        $('.slick-portfolio').slick('slickUnfilter');
+        $('.slick-portfolio').slick('slickFilter', '.animation');
+        $('.active').removeClass('active');
+        $('.animation-filter').addClass('active');
+
+        /** Move Dots on top of Slideshow **/
+        $('.slick-portfolio>.slick-dots:parent').each(function () {
+            $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
+        });
+
+        filtered = true;
+    });
+
     // Left navigation arrow
-    $('.left').click(function(){
+    $('.left').click(function (){
         $('.slick-portfolio').slick('slickPrev');
     });
 
     // Right navigation arrow
-    $('.right').click(function(){
+    $('.right').click(function (){
         $('.slick-portfolio').slick('slickNext');
     });
 
@@ -72,6 +147,7 @@
     $('.slick-portfolio>.slick-dots:parent').each(function () {
         $(this).insertBefore($(this).prev('.slick-portfolio>.slick-list'));
     });
+
 
     // Snap SVG
     // --------
@@ -151,83 +227,6 @@
 
     };
 
-
-    /**
-     * --------------------------------
-     * Load Snap Animated Dribbble Icon
-     * --------------------------------
-     */
-    var sDribbble = Snap("#icon-dribbble"), iconDribbble; // This will use an existing svg element (not a div)
-
-    Snap.load('themes/custom/jptheme/assets/images/icon-dribbble.svg', function (response) {
-        iconDribbble = response;
-        sDribbble.append(iconDribbble);
-        initialiseDribbble();
-    });
-
-    initialiseDribbble = function() {
-        /**
-         * Put segments in place & group them
-         */
-        var segmentD1 = sDribbble.select('#segment-dribbble-1');
-        var segmentD4 = sDribbble.select('#segment-dribbble-4');
-        var segmentGroupD = sDribbble.group(segmentD1, segmentD4);
-        var dribbbleSymbol = sDribbble.select('#dribbble-symbol');
-
-        /** Fill everything in **/
-        sDribbble.attr({fill: '#4d4d4d'});
-
-        /** Set animating to true **/
-        var animating = true;
-
-        /** Begin animation and loop **/
-        function animOnDribbble() {
-
-            if (animating) {
-
-                setTimeout(function () {
-                    dribbbleSymbol.animate({
-                        fill:'#fcc911'
-                    }, 200);
-                }, 0);
-
-                setTimeout(function () {
-                    segmentGroupD.stop().animate({
-                        fill:'#fcc911'
-                    }, 200, function () { segmentGroupD.animate({fill: '#4d4d4d'}, 500, animOnDribbble)});
-                }, 0);
-            }
-        }
-
-        /** Kicks in when mouse leaves element **/
-        function animOutDribbble() {
-
-            setTimeout(function () {
-                dribbbleSymbol.animate({
-                    fill:'#4d4d4d'
-                }, 200);
-            }, 0);
-        }
-
-        /**
-         * Fills segment with certain color
-         * @param segement: Snap object
-         * @param color: Hex Sting
-         * @param timer: Duration in ms
-         * @param callback: function to call after completion
-         */
-        /* var resetColor = function (segment, color, timer, mina, callback) {
-         if (segment && color && timer) {
-         segment.animate({ fill: color }, timer, mina, callback);
-         }
-         }; */
-
-        // Trigger animation on hover. Set animating to false by mouseleave. Animation stops.
-        $('#icon-dribbble-link').hover(function () {animating = true; animOnDribbble()}, function () {animating = false; animOutDribbble()});
-
-    };
-
-
     /**
      * -------------------------------
      * Load Snap Animated Behance Icon
@@ -285,20 +284,7 @@
             }, 0);
         }
 
-        /**
-         * Fills segment with certain color
-         * @param segement: Snap object
-         * @param color: Hex Sting
-         * @param timer: Duration in ms
-         * @param callback: function to call after completion
-         */
-        /* var resetColor = function (segment, color, timer, mina, callback) {
-         if (segment && color && timer) {
-         segment.animate({ fill: color }, timer, mina, callback);
-         }
-         }; */
-
-        // Trigger animation on hover. Set animating to false by mouseleave. Animation stops.
+        /** Trigger animation on hover. Set animating to false by mouseleave. Animation stops. **/
         $('#icon-behance-link').hover(function () {animating = true; animOnBehance()}, function () {animating = false; animOutBehance()});
 
     };
@@ -375,7 +361,7 @@
             }
         }; */
 
-        // Trigger animation on hover. Set animating to false by mouseleave. Animation stops.
+        /** Trigger animation on hover. Set animating to false by mouseleave. Animation stops. **/
         $('#icon-facebook-link').hover(function () {animating = true; animOn()}, function () {animating = false; animOut()});
 
     };
@@ -452,7 +438,7 @@
          }
          }; */
 
-        // Trigger animation on hover. Set animating to false by mouseleave. Animation stops.
+        /** Trigger animation on hover. Set animating to false by mouseleave. Animation stops. **/
         $('#icon-twitter-link').hover(function () {animating = true; animOnTwitter()}, function () {animating = false; animOutTwitter()});
 
     }
