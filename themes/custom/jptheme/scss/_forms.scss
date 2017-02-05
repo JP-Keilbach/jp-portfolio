@@ -1,0 +1,89 @@
+// Table of Content - Contact Block
+// --------------------------------
+// 1.0 Global Form Styles
+// 2.0 Contact Form
+// ---
+// 2.0 Portfolio Nav
+//
+// ------------------------------
+
+button,
+input,
+optgroup,
+select {
+	line-height: rem-calc(48);
+}
+
+textarea {
+	max-height: rem-calc(240);
+	margin-bottom: rem-calc(24);
+	border-top: 1px solid $light-gray;
+	border-bottom: 4px solid $dirt;
+	line-height: rem-calc(24);
+
+	&:focus {
+		border-top: 1px solid $light-gray;
+		border-bottom: 4px solid $dirt;
+	}
+}
+
+.js input.form-autocomplete {
+	background-position: 98% center;
+}
+
+[type='datetime-local'],
+[type='datetime'],
+[type='password'],
+[type='number'],
+[type='search'],
+[type='color'],
+[type='email'],
+[type='month'],
+[type='time'],
+[type='text'],
+[type='date'],
+[type='week'],
+[type='tel'],
+[type='url'] {
+	height: rem-calc(48);
+	padding: rem-calc(0 10);
+	margin: rem-calc(0 0 24 0);
+	border-top: 1px solid $light-gray;
+	border-bottom: 4px solid $dirt;
+	// font-size: rem-calc(14);
+	line-height: rem-calc(48);
+
+	&:before {
+		content: 'Hello';
+		position: relative;
+		display: block;
+		width: rem-calc(100);
+		height: 4px;
+		border-bottom: 4px solid $sunshine;
+	}
+
+	&:focus {
+		border-top: 1px solid $light-gray;
+		border-bottom: 4px solid $dirt;
+	}
+}
+
+[type='submit'] {
+	padding: rem-calc(0 10);
+	line-height: rem-calc(48);
+}
+
+// Contact Form
+// ------------
+#contact-message-feedback-form {
+	margin-bottom: rem-calc(24);
+
+	label {
+		display: none;
+	}
+
+	#edit-preview {
+		display: none;
+	}
+
+}

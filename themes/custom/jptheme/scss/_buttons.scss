@@ -1,3 +1,15 @@
 .button {
+	height: rem-calc(48);
 	border: none;
+}
+
+#button-submit {
+	display: table;
+	width: rem-calc(180);
+	margin: 0 auto;
+	cursor: pointer;
+
+	.segment-inner {
+		fill: $light-gray;
+	}
 }
