@@ -588,5 +588,89 @@
 
     }
 
+    /**
+     * ------------------------------------
+     * Load Snap animated Navigation Arrows
+     * ------------------------------------
+     */
+
+    var sNavArrows = Snap("#nav-arrows"), navArrows; // This will use an existing svg element (not a div)
+
+    Snap.load('themes/custom/jptheme/assets/images/slick-nav-arrows.svg', function (response) {
+        navArrows = response;
+        sNavArrows.append(navArrows);
+        initialiseNavArrows();
+    });
+
+    initialiseNavArrows = function() {
+
+        /** Put segments in place & group them **/
+        var segmentSub3 = sNavArrows.select('#segment-3');
+        var segmentSub6 = sNavArrows.select('#segment-6');
+        var star = sNavArrows.select('#star');
+
+        /** Fill everything in **/
+        sNavArrows.attr({fill: '#2e2e2e'});
+
+        /** Set animating to true **/
+        var animating = true;
+
+        /** Begin animation and loop **/
+        function animOnArrowLeft() {
+
+            if (animating) {
+
+                setTimeout(function () {
+                    segmentSub6.stop().animate({
+                        fill: '#fcc911'
+                    }, 200);
+
+                    star.stop().animate({
+                        fill: '#fcc911'
+                    }, 200);
+                }, 0);
+            }
+        }
+
+        function animOnArrowRight() {
+
+            if (animating) {
+
+                setTimeout(function () {
+                    segmentSub3.stop().animate({
+                        fill: '#fcc911'
+                    }, 200);
+
+                    star.stop().animate({
+                        fill: '#fcc911'
+                    }, 200);
+                }, 0);
+            }
+        }
+
+        /** Kicks in when mouse leaves element **/
+        function animOutArrows() {
+
+            setTimeout(function () {
+                segmentSub6.stop().animate({
+                    fill: '#2e2e2e'
+                }, 200);
+
+                segmentSub3.stop().animate({
+                    fill: '#2e2e2e'
+                }, 200);
+
+                star.stop().animate({
+                    fill: '#4d4d4d'
+                }, 200);
+            }, 0);
+        }
+
+        /** Trigger animation on hover. Set animating to false by mouseleave. Animation stops. **/
+        $('.slick-arrows>.left').hover(function () {animating = true; animOnArrowLeft()}, function () {animating = false; animOutArrows()});
+        $('.slick-arrows>.right').hover(function () {animating = true; animOnArrowRight()}, function () {animating = false; animOutArrows()});
+
+    }
+
 }(jQuery));
 

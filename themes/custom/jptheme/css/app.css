@@ -6022,69 +6022,75 @@ textarea {
       /* line 92, scss/_slick.scss */
       .slick-arrows-container ul.slick-arrows li.left:hover, .slick-arrows-container ul.slick-arrows li.right:hover {
         color: #222222; }
-    /* line 103, scss/_slick.scss */
+    /* line 97, scss/_slick.scss */
+    .slick-arrows-container ul.slick-arrows li:nth-child(2) {
+      height: 3rem; }
+      /* line 100, scss/_slick.scss */
+      .slick-arrows-container ul.slick-arrows li:nth-child(2) #nav-arrows {
+        height: inherit; }
+    /* line 105, scss/_slick.scss */
     .slick-arrows-container ul.slick-arrows li img {
       display: block;
       height: 3rem; }
 
-/* line 115, scss/_slick.scss */
+/* line 117, scss/_slick.scss */
 .slick-portfolio .slick-slide {
   width: 333.328px; }
 
-/* line 119, scss/_slick.scss */
+/* line 121, scss/_slick.scss */
 .slick-portfolio .tile-slick-portfolio {
   float: left; }
-  /* line 122, scss/_slick.scss */
+  /* line 124, scss/_slick.scss */
   .slick-portfolio .tile-slick-portfolio ul {
     float: left;
     width: 100%;
     padding: 0;
     margin: 1.1875rem 0 0 0;
     border-top: 1px solid #AAAAAA; }
-    /* line 129, scss/_slick.scss */
+    /* line 131, scss/_slick.scss */
     .slick-portfolio .tile-slick-portfolio ul li {
       float: left;
       font-size: 0.875rem;
       text-transform: uppercase;
       line-height: 3rem; }
-      /* line 134, scss/_slick.scss */
+      /* line 136, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li:nth-child(1) {
         margin-right: 0.625rem;
         border-right: 1px solid #CDCDCD; }
-        /* line 138, scss/_slick.scss */
+        /* line 140, scss/_slick.scss */
         .slick-portfolio .tile-slick-portfolio ul li:nth-child(1) i {
           display: block;
           width: 3rem;
           font-family: "klinic_slabbold", Times New Roman, sans;
           font-style: normal;
           text-align: center; }
-      /* line 147, scss/_slick.scss */
+      /* line 149, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li:nth-child(3) {
         float: right;
         padding: 0 0.625rem;
         border-left: 1px solid #CDCDCD; }
-        /* line 152, scss/_slick.scss */
+        /* line 154, scss/_slick.scss */
         .slick-portfolio .tile-slick-portfolio ul li:nth-child(3) i.icon-go-to {
           display: table-cell;
           background: url("../assets/images/icon-go-to.svg") center center no-repeat transparent;
           line-height: 3rem;
           width: 1.75rem;
           height: 1.5rem; }
-      /* line 163, scss/_slick.scss */
+      /* line 165, scss/_slick.scss */
       .slick-portfolio .tile-slick-portfolio ul li a {
         display: table;
         float: right;
         height: 3rem; }
-        /* line 168, scss/_slick.scss */
+        /* line 170, scss/_slick.scss */
         .slick-portfolio .tile-slick-portfolio ul li a span {
           display: table-cell;
           padding-right: 0.625rem;
           line-height: 3rem; }
-  /* line 177, scss/_slick.scss */
+  /* line 179, scss/_slick.scss */
   .slick-portfolio .tile-slick-portfolio .portfolio-image {
     margin-right: 0; }
 
-/* line 193, scss/_slick.scss */
+/* line 195, scss/_slick.scss */
 .slick-columns {
   padding: 0; }
 
