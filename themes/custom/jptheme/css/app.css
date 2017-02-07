@@ -5641,7 +5641,7 @@ textarea {
 
 /* line 78, scss/_forms.scss */
 #contact-message-feedback-form {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 3rem; }
   /* line 81, scss/_forms.scss */
   #contact-message-feedback-form label {
     display: none; }
@@ -5658,9 +5658,10 @@ textarea {
 #button-submit {
   display: table;
   width: 11.25rem;
+  height: 3rem;
   margin: 0 auto;
   cursor: pointer; }
-  /* line 12, scss/_buttons.scss */
+  /* line 13, scss/_buttons.scss */
   #button-submit .segment-inner {
     fill: #CDCDCD; }
 

@@ -464,19 +464,28 @@
 
     initialiseSubmit = function() {
 
-        /**
-         * Put segments in place & group them
-         */
+        /** Put segments in place & group them **/
+        var segmentSub1 = sSubmit.select('#segment-1');
         var segmentSub2 = sSubmit.select('#segment-2');
+        var segmentSub3 = sSubmit.select('#segment-3');
+        var segmentSub4 = sSubmit.select('#segment-4');
         var segmentSub5 = sSubmit.select('#segment-5');
+        var segmentSub6 = sSubmit.select('#segment-6');
         var segmentGroup = sSubmit.group(segmentSub2, segmentSub5);
-        var sendSignal = sSubmit.select('#typo');
+        var segmentGroupLeft = sSubmit.group(segmentSub1, segmentSub3);
+        var segmentGroupRight = sSubmit.group(segmentSub4, segmentSub6);
 
-        console.log('output segmentGroup var: ' + segmentGroup);
-        // var twitterSymbol = sTwitter.select('#twitter-symbol');
+        var sendSignal = sSubmit.select('#typo');
+        var background = sSubmit.select('.background');
+        var stroke = sSubmit.select('.stroke');
+
+
 
         /** Fill everything in **/
-        sSubmit.attr({fill: '#4d4d4d'});
+        sSubmit.attr({fill: '#2e2e2e'});
+        stroke.attr({fill: '#4d4d4d'});
+        background.attr({fill: '#fefefe'});
+        sendSignal.attr({fill: '#4d4d4d'});
 
         /** Set animating to true **/
         var animating = true;
@@ -487,27 +496,48 @@
             if (animating) {
 
                 setTimeout(function () {
-                    sendSignal.animate({
-                        fill:'#2e2e2e'
-                    }, 200);
+
                 }, 0);
 
                 setTimeout(function () {
-                    segmentSub2.stop().animate({
-                        transform: 't-5,0 r0 133,222 33,32)',
+                    /* segmentSub2.stop().animate({
+                        transform: 't-5,0 r0',
                         opacity: '0'
                     }, 500, function () { segmentSub2.animate({
-                        transform: 't0,0 r0 133,222 33,32)',
+                        transform: 't0,0 r0',
                         opacity: '1'
-                    }, 0, animOnButton)});
+                    }, 0, animOnButton)}); */
 
-                    segmentSub5.stop().animate({
-                        transform: 't5,0 r0 133,222 33,32)',
+                    /* segmentSub5.stop().animate({
+                        transform: 't5,0 r0',
                         opacity: '0'
                     }, 500, function () { segmentSub5.animate({
-                        transform: 't0,0 r0 133,222 33,32)',
+                        transform: 't0,0 r0',
                         opacity: '1'
-                    }, 0, animOnButton)});
+                    }, 0, animOnButton)}); */
+
+                    segmentSub2.stop().animate({
+                        transform: 't-5,0 r0',
+                        fill: '#fcc911'
+                    }, 500);
+
+                    segmentSub5.stop().animate({
+                        transform: 't5,0 r0',
+                        fill: '#fcc911'
+                    }, 500);
+
+                    stroke.stop().animate({
+                        fill: '#2e2e2e'
+                    }, 0);
+
+                    background.stop().animate({
+                        fill: '#2e2e2e'
+                    }, 0);
+
+                    sendSignal.animate({
+                        fill:'#fefefe'
+                    }, 0);
+
                 }, 0);
             }
         }
@@ -518,7 +548,25 @@
             setTimeout(function () {
                 sendSignal.animate({
                     fill:'#4d4d4d'
-                }, 200);
+                }, 500);
+
+                stroke.stop().animate({
+                    fill: '#4d4d4d'
+                }, 0);
+
+                background.stop().animate({
+                    fill: '#fefefe'
+                }, 500);
+
+                segmentSub2.stop().animate({
+                    transform: 't0,0 r0',
+                    fill: '#2e2e2e'
+                }, 500);
+
+                segmentSub5.stop().animate({
+                    transform: 't0,0 r0',
+                    fill: '#2e2e2e'
+                }, 500);
             }, 0);
         }
 
