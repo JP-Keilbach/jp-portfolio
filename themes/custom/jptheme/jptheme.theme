@@ -1,16 +1,6 @@
 <?php
 
-function jptheme_preprocess_node(&$variables) {
-    if ($variables['view_mode'] == 'full') {
-        $node =& $variables['node'];
 
-            $path = drupal_get_path('theme', 'jptheme');
-            drupal_add_js($path . '/js/snap-icons.js', array('type' => 'file', 'scope' => 'header'));
-            // drupal_add_js($path . '/js/jquery.fancybox-1.3.4.pack.js', array('type' => 'file', 'scope' => 'header'));
-            // drupal_add_js($path . '/js/jquery.fancybox-calls.js', array('type' => 'file', 'scope' => 'header'));
-
-    }
-}
 
 
 ?>

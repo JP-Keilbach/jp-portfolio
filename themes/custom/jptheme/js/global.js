@@ -13,4 +13,16 @@
         }
     });
 
+    drupal_add_js(array('myModule' => array('basepath' => '<your-drupal-base-path>')), 'setting');
+
+    var path = Drupal.settings.myModule.basepath;
+    console.log(path);
+
+    // var baseUrl = Drupal.settings.basePath;
+    // console.log(baseUrl); // will be '/' if base URL isn't set
+
+
 }(jQuery));
+
+
+

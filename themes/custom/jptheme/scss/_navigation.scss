@@ -13,10 +13,16 @@
 // 3.0 Styling for hover behavior
 // ------------------------------
 
+.main-navigation-container {
+	background: $dirt;
+	margin: rem-calc(24 0 24 0);
+}
+
 // 1.0 Top Bar
 // -----------
 .top-bar {
-	margin: rem-calc(24 0 24 0);
+	background: #ffffff;
+	margin: 0;
 	padding: 0;
 
 	// Top Bar Lists Global
