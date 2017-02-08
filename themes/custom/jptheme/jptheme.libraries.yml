@@ -12,7 +12,10 @@ global-styling:
     bower_components/foundation-sites/dist/js/foundation.js: {}
     /libraries/slick/slick/slick.min.js: {}
     js/snap.svg-min.js: {}
-    js/app.js: {}
+    js/global.js: {}
+    js/slick.js: {}
+    js/snap-icons.js: {}
+    js/snap-buttons.js: {}
 
   dependencies:
     - core/jquery
