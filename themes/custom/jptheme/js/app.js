@@ -1,5 +1,4 @@
-
-(function($) {
+(function($, drupalSettings) {
 
     /** Import smoth page scrolling **/
     $.getScript("/themes/custom/jptheme/js/global.js");
@@ -13,5 +12,5 @@
     /** Import snap animated buttons **/
     $.getScript("/themes/custom/jptheme/js/snap-buttons.js");
 
-}(jQuery));
+}(jQuery, drupalSettings));
 

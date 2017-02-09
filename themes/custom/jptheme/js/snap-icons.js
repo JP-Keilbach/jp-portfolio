@@ -10,7 +10,7 @@
      */
     var sInstagram = Snap("#icon-instagram"), iconInstagram; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/icon-instagram.svg', function (response) {
+    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/icon-instagram.svg', function (response) {
         iconInstagram = response;
         sInstagram.append(iconInstagram);
         initialiseInstagram();
@@ -85,7 +85,7 @@
      */
     var sBehance = Snap("#icon-behance"), iconBehance; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/icon-behance.svg', function (response) {
+    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/icon-behance.svg', function (response) {
         iconBehance = response;
         sBehance.append(iconBehance);
         initialiseBehance();
@@ -148,7 +148,7 @@
      */
     var sFacebook = Snap("#icon-facebook"), iconFacebook; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/icon-facebook.svg', function (response) {
+    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/icon-facebook.svg', function (response) {
         iconFacebook = response;
         sFacebook.append(iconFacebook);
         initialise();
@@ -211,7 +211,7 @@
      */
     var sTwitter = Snap("#icon-twitter"), iconTwitter; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/icon-twitter.svg', function (response) {
+    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/icon-twitter.svg', function (response) {
         iconTwitter = response;
         sTwitter.append(iconTwitter);
         initialiseTwitter();

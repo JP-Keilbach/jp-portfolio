@@ -6,7 +6,11 @@
 	<div class="main-navigation-container">
 
 		<div class="row">
-			{{ page.main_navigation }}
+			{% if is_front %}
+				{{ page.main_navigation }}
+			{% else %}
+				<h2>Page navigation goes here</h2>
+			{% endif %}
 		</div>
 
 	</div>

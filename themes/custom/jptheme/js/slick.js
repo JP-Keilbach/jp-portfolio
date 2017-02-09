@@ -145,13 +145,17 @@
      * Load Snap animated Navigation Arrows
      * ------------------------------------
      */
+
     var sNavArrows = Snap("#nav-arrows"), navArrows; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/slick-nav-arrows.svg', function (response) {
-        navArrows = response;
-        sNavArrows.append(navArrows);
-        initialiseNavArrows();
-    });
+    if (sNavArrows) {
+        Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/slick-nav-arrows.svg', function (response) {
+            navArrows = response;
+            sNavArrows.append(navArrows);
+            initialiseNavArrows();
+        });
+    }
+
 
     initialiseNavArrows = function() {
 

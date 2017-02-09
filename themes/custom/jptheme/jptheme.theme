@@ -1,6 +1,9 @@
 <?php
 
+function jptheme_preprocess(&$variables) {
+    global $base_url;
+    // Now you can use it.
+    $variables['base_url'] = $base_url;
+}
 
 
-
-?>

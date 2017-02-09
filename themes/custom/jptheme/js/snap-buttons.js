@@ -13,7 +13,7 @@
 
     var sSubmit = Snap("#submit"), btnSubmit; // This will use an existing svg element (not a div)
 
-    Snap.load('themes/custom/jptheme/assets/images/button-submit.svg', function (response) {
+    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/button-submit.svg', function (response) {
         btnSubmit = response;
         sSubmit.append(btnSubmit);
         initialiseSubmit();
