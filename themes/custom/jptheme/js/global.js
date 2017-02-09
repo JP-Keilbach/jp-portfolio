@@ -1,4 +1,4 @@
-(function($, drupalSettings) {
+(function($) {
 
     /** Set base path **/
     var baseUrl = Drupal.url.toAbsolute('/');
@@ -19,7 +19,7 @@
         }
     });
 
-}(jQuery, drupalSettings));
+}(jQuery));
 
 
 

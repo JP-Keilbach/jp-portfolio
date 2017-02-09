@@ -1,17 +1,18 @@
 // Table of Content - Navigation
 // -----------------------------
 // 1.0 Top Bar
-// 	1.1 Top Bar Title
-// 	1.2 Top Bar Left
-// 	1.3 Top Bar Right
+// 	1.1 Top Bar Lists Global
+// 	1.2 Top Bar Title
+// 	1.3 Top Bar Left
+// 	1.4 Top Bar Right
 // ---
 // 2.0 Portfolio Nav
 // 	2.1 Stuff goes here
 // 	2.2 Stuff goes here
 // 	2.3 Stuff goes here
 // ---
-// 3.0 Styling for hover behavior
-// ------------------------------
+// 3.0 Styling hover animation
+// ---------------------------
 
 .main-navigation-container {
 	background: $dirt;
@@ -25,7 +26,7 @@
 	margin: 0;
 	padding: 0;
 
-	// Top Bar Lists Global
+	// 1.1 Top Bar Lists Global
 	// --------------------
 	ul.menu {
 		float: left;
@@ -52,7 +53,7 @@
 		}
 	}
 
-	// 1.1 Top Bar Title
+	// 1.2 Top Bar Title
 	// -----------------
 	.top-bar-title {
 		background: $dirt;
@@ -177,7 +178,7 @@
 		}
 	}
 
-	// 1.2 Top Bar Left
+	// 1.3 Top Bar Left
 	// ----------------
 	.top-bar-left {
 		width: 100%;
@@ -210,7 +211,7 @@
 	}
 }
 
-// 1.3 Top Bar Right
+// 1.4 Top Bar Right
 // -----------------
 .top-bar-right {
 	background: $dirt;
@@ -278,8 +279,8 @@
 	}
 }
 
-// Styling for hover behavior
-// --------------------------
+// 3.0 Styling hover animation
+// ---------------------------
 .top-bar-left,
 #nav-portfolio {
 	li a {
