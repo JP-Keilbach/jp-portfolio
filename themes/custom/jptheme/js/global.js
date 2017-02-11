@@ -1,9 +1,8 @@
-(function($) {
+(function($, drupalSettings) {
 
     /** Set base path **/
     var baseUrl = Drupal.url.toAbsolute('/');
     Drupal.myBasePath = baseUrl;
-
 
     /** Make smooth scrolling possible **/
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -19,7 +18,7 @@
         }
     });
 
-}(jQuery));
+}(jQuery, drupalSettings));
 
 
 

@@ -148,6 +148,8 @@
      */
     var sFacebook = Snap("#icon-facebook"), iconFacebook; // This will use an existing svg element (not a div)
 
+    console.log('output my base path: ' + Drupal.myBasePath);
+
     Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/icon-facebook.svg', function (response) {
         iconFacebook = response;
         sFacebook.append(iconFacebook);

@@ -3,16 +3,14 @@
 		{{ page.header }}
 	</div>
 
-	<div class="main-navigation-container">
+	{% if is_front %}
 
-		<div class="row">
-			{% if is_front %}
+		<div class="main-navigation-container">
+			<div class="row">
 				{{ page.main_navigation }}
-			{% else %}
-				{{ page.main_navigation }}
-			{% endif %}
+			</div>
 		</div>
 
-	</div>
+	{% endif %}
 
 </header>

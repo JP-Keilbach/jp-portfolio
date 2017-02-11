@@ -1,6 +1,19 @@
 .button {
 	height: rem-calc(48);
 	border: none;
+
+	font-family: $ks-medium;
+	text-transform: uppercase;
+	letter-spacing: rem-calc(1);
+
+	&:hover {
+		background-color: $dirt;
+	}
+
+	&.form-submit {
+		display: table;
+		margin: 0 auto;
+	}
 }
 
 #button-submit {

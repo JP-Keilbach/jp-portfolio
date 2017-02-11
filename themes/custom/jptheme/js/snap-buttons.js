@@ -6,18 +6,22 @@
      * --------------------------------
      */
 
-    /** Change submit button (input) in contact form **/
-    var submitinput = document.getElementById("edit-submit");
-    var submitbtn = document.getElementById("button-submit");
-    submitinput.parentNode.replaceChild(submitbtn, submitinput);
-
     var sSubmit = Snap("#submit"), btnSubmit; // This will use an existing svg element (not a div)
 
-    Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/button-submit.svg', function (response) {
-        btnSubmit = response;
-        sSubmit.append(btnSubmit);
-        initialiseSubmit();
-    });
+    if (sSubmit) {
+
+        /** Change submit button (input) in contact form **/
+        var submitinput = document.getElementById("edit-submit");
+        var submitbtn = document.getElementById("button-submit");
+        submitinput.parentNode.replaceChild(submitbtn, submitinput);
+
+        Snap.load(Drupal.myBasePath + 'themes/custom/jptheme/assets/images/button-submit.svg', function (response) {
+            btnSubmit = response;
+            sSubmit.append(btnSubmit);
+            initialiseSubmit();
+        });
+    }
+
 
     initialiseSubmit = function() {
 

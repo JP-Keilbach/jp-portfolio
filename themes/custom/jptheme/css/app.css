@@ -5575,6 +5575,12 @@ textarea {
   background-position: 98% center; }
 
 /* line 34, scss/_forms.scss */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+/* line 40, scss/_forms.scss */
 [type='datetime-local'],
 [type='datetime'],
 [type='password'],
@@ -5590,12 +5596,13 @@ textarea {
 [type='tel'],
 [type='url'] {
   height: 3rem;
-  padding: 0 0.625rem;
+  padding: 0 1.25rem;
   margin: 0 0 1.5rem 0;
   border-top: 1px solid #CDCDCD;
   border-bottom: 4px solid #222222;
-  line-height: 3rem; }
-  /* line 56, scss/_forms.scss */
+  line-height: 3rem;
+  background-color: #fefefe !important; }
+  /* line 62, scss/_forms.scss */
   [type='datetime-local']:before,
   [type='datetime']:before,
   [type='password']:before,
@@ -5616,7 +5623,7 @@ textarea {
     width: 6.25rem;
     height: 4px;
     border-bottom: 4px solid #FCC911; }
-  /* line 65, scss/_forms.scss */
+  /* line 71, scss/_forms.scss */
   [type='datetime-local']:focus,
   [type='datetime']:focus,
   [type='password']:focus,
@@ -5632,36 +5639,77 @@ textarea {
   [type='tel']:focus,
   [type='url']:focus {
     border-top: 1px solid #CDCDCD;
-    border-bottom: 4px solid #222222; }
-
-/* line 71, scss/_forms.scss */
-[type='submit'] {
-  padding: 0 0.625rem;
-  line-height: 3rem; }
+    border-bottom: 4px solid #222222;
+    -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 /* line 78, scss/_forms.scss */
+[type='submit'] {
+  padding: 0 1.25rem;
+  line-height: 3rem; }
+
+/* line 85, scss/_forms.scss */
 #contact-message-feedback-form {
   margin-bottom: 3rem; }
-  /* line 81, scss/_forms.scss */
+  /* line 88, scss/_forms.scss */
   #contact-message-feedback-form label {
     display: none; }
-  /* line 85, scss/_forms.scss */
+  /* line 92, scss/_forms.scss */
   #contact-message-feedback-form #edit-preview {
     display: none; }
+
+/* line 99, scss/_forms.scss */
+.user-login-form {
+  margin-bottom: 3rem; }
+  /* line 102, scss/_forms.scss */
+  .user-login-form .description {
+    margin-bottom: 1.5rem;
+    text-transform: none;
+    text-align: left; }
+  /* line 108, scss/_forms.scss */
+  .user-login-form label {
+    display: none; }
+
+/* line 113, scss/_forms.scss */
+.js-form-item {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase; }
+  /* line 119, scss/_forms.scss */
+  .js-form-item h4.label {
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+    background: none;
+    border-bottom: 1px solid #CDCDCD;
+    color: #222222;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.0625rem; }
 
 /* line 1, scss/_buttons.scss */
 .button {
   height: 3rem;
-  border: none; }
+  border: none;
+  font-family: "klinic_slabmedium", Times New Roman, sans;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem; }
+  /* line 9, scss/_buttons.scss */
+  .button:hover {
+    background-color: #222222; }
+  /* line 13, scss/_buttons.scss */
+  .button.form-submit {
+    display: table;
+    margin: 0 auto; }
 
-/* line 6, scss/_buttons.scss */
+/* line 19, scss/_buttons.scss */
 #button-submit {
   display: table;
   width: 11.25rem;
   height: 3rem;
   margin: 0 auto;
   cursor: pointer; }
-  /* line 13, scss/_buttons.scss */
+  /* line 26, scss/_buttons.scss */
   #button-submit .segment-inner {
     fill: #CDCDCD; }
 

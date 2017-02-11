@@ -1,5 +1,12 @@
 (function($, drupalSettings) {
 
+    var baseUrl = drupalSettings.path.baseUrl;
+    // var baseUrl = Drupal.url.toAbsolute('/');
+    // Drupal.myBasePath = baseUrl;
+
+    // console.log('output base path: ' + Drupal.myBasePath);
+    console.log('output base path: ' + baseUrl);
+
     /** Import smoth page scrolling **/
     $.getScript("/themes/custom/jptheme/js/global.js");
 
